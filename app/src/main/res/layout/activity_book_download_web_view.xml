@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.BookTextSummaryActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_BookWebViewDD"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_background_color"
+        app:layout_collapseMode="pin"
+        android:elevation="@dimen/toolbar_elevation"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_back_BookWebViewDD"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="@dimen/spacing_mxlarge"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:srcCompat="@drawable/ic_baseline_arrow_back"
+            app:tint="@color/toolbar_tint_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/iv_toolbar_title_BookWebViewDD"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="@string/freebook_downloader"
+            android:textColor="@color/toolbar_text_color"
+            android:visibility="gone"
+
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_share_BookWebViewDD"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_22sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/toolbar_tint_color"
+            android:src="@drawable/ic_round_share_24" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_store_BookWebViewDD"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/toolbar_tint_color"
+            android:src="@drawable/ic_round_online_book_store_24" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar_horizontal"
+        android:layout_width="match_parent"
+        android:progressBackgroundTint="@color/blue"
+        android:indeterminate="false"
+        android:progress="0"
+        android:max="100"
+        android:layout_below="@id/toolbar_BookWebViewDD"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"/>
+
+    <include android:id="@+id/progressBarSignUpPrivacy" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_below="@+id/divider_privacy_toolbar_" android:visibility="gone" layout="@layout/progressbar_transparent_bg" />
+
+
+    <WebView
+        android:id="@+id/webView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_BookWebViewDD" />
+
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/no_internet_page_privacy"
+        layout="@layout/layout_no_internet_page"
+        android:layout_below="@id/toolbar_BookWebViewDD"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center"
+    android:tag="layout/progressbar_black_transparent_0" android:background="@color/grey_lighter" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:alpha="0.7" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@+id/baseProgressbar" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@android:style/Widget.Holo.Light.ProgressBar.Large" />
+</androidx.appcompat.widget.LinearLayoutCompat>

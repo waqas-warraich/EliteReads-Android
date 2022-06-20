@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="100.0dip" android:layout_height="100.0dip"  app:srcCompat="@drawable/ic__delete_outline_24" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:textColor="@color/design_dark_default_color_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:text="@string/no_results_found" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAllCaps="false" android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textColor="@color/text_color_grey_version_name" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:text="@string/try_a_more_general_keyword" />
+            <androidx.appcompat.widget.AppCompatButton android:textAllCaps="false" android:textSize="20sp" android:textColor="@android:color/white" android:id="@+id/bt_search_again" android:background="@drawable/bg_round_corner_login_" android:layout_width="200.0dip" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/spacing_xlarge" android:text="@string/search_again" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

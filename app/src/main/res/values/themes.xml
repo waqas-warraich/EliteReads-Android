@@ -1,0 +1,122 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EliteReads" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/teal_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimarySurface">@color/primaryBackground</item>
+        <item name="backgroundColor">@color/primaryBackground</item>
+        <item name="android:windowBackground">@color/primaryBackground</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+
+        <!-- Customize your theme here. -->
+
+
+        <item name="android:textColorPrimary">@color/black_shade</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+    <style name="Theme.EliteReads.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.EliteReads.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.EliteReads.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:fragmentEnterTransition">@anim/design_bottom_sheet_slide_in</item>
+        <item name="android:fragmentExitTransition">@anim/design_bottom_sheet_slide_out</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+
+        <item name="android:fragmentEnterTransition">@anim/design_bottom_sheet_slide_in</item>
+        <item name="android:fragmentExitTransition">@anim/design_bottom_sheet_slide_out</item>
+
+    </style>
+    <style name="textview_style_default" parent="@style/AppTheme">
+        <item name="android:textColor">@color/black_shade</item>
+    </style>
+
+    <style name="edit_text_hint_theme_1">
+        <item name="android:textColorHint">@color/text_color_1</item>
+        <item name="android:editTextColor">@color/text_color_3</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/border_color_3</item>
+    </style>
+
+    <style name="horizontal_profiles_searched_tv_style" parent="@style/textview_style_default">
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">@dimen/_3sdp</item>
+    </style>
+    <style name="item_tutor_profile_text_style">
+        <item name="android:textColor">@color/text_color_23</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_8sdp</item>
+    </style>
+
+    <style name="GenreRecycleView">
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="profile_menu_text_small">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/text_color_30</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:elevation">@dimen/_3sdp</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/_55sdp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:drawablePadding">@dimen/_14sdp</item>
+
+        <item name="android:layout_marginStart">0.0dip</item>
+
+    </style>
+
+
+    <style name="profile_menu_sep">
+        <item name="android:background">@color/border_color_16</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_1sdp</item>
+    </style>
+    <style name="signup_button_style_white_back">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+
+    <style name="signup_button_style_with_background" parent="@style/signup_button_style_white_back">
+        <item name="android:background">@drawable/blue_background_selector</item>
+    </style>
+    <style name="signup_button_style_with_border" parent="@style/signup_button_style_white_back">
+        <item name="android:background">@drawable/bg_round_contact_tutor_buttons</item>
+        <item name="android:state_pressed">@color/blue</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="explore_recommenders_grid_layout_columns">4</integer>
+    <integer name="recommender_genre_grid_layout_columns">3</integer>
+    <integer name="book_grid_layout_columns">3</integer>
+</resources>

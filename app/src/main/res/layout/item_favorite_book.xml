@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_favorite_book" android:layout_marginTop="@dimen/_3sdp" android:background="@color/fav_item_book_layout_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" app:cardUseCompatPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_parent_container_fav_book_item"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_7sdp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="150dip"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="0.0dip"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_book_cover_image_item"
+                android:layout_width="100dip"
+                android:layout_height="150dip"
+
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="@color/grey_lighter"
+                android:src="@drawable/einstien_biography_cover" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_bookName_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:text="@string/book_item_book_namez_paceholder"
+            android:textColor="@color/fav_item_book_name_text_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/iv_share_bookItem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/item_tutor_profile_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/text_color_23"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_bookName_fav"
+            app:layout_constraintStart_toEndOf="@id/tv_name_bookName_fav"
+            app:layout_constraintTop_toTopOf="@id/tv_name_bookName_fav" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bookAuthor_name_favBookItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/author_label_text_bookItem"
+            android:textColor="@color/fav_item_book_info_label_color"
+            android:visibility="visible"
+
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_bookName_fav" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bookAuthor_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="@string/author_name_text_plceholder_bookItem"
+            android:textColor="@color/fav_item_book_info_value_color"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_bookAuthor_name_favBookItem"
+            app:layout_constraintStart_toEndOf="@id/tv_bookAuthor_name_favBookItem" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_book_publishing_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:layout_marginTop="05dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/published_date_text_plceholder_bookItem"
+            android:textColor="@color/fav_item_book_info_label_color"
+            android:visibility="visible"
+
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_bookAuthor_name_favBookItem" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_publishing_date_value_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="12 March, 2013"
+            android:textColor="@color/fav_item_book_info_value_color"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_book_publishing_date_label"
+            app:layout_constraintStart_toEndOf="@id/tv_book_publishing_date_label" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_genre_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="Genre: "
+            android:textColor="@color/fav_item_book_info_label_color"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_book_publishing_date_label" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_genre_bookFavItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="Biography"
+            android:textColor="@color/fav_item_book_info_value_color"
+
+            android:visibility="visible"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_book_genre_label"
+
+            app:layout_constraintEnd_toStartOf="@id/iv_share_bookItem"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toEndOf="@id/tv_book_genre_label" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_delete_btn_bookItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:src="@drawable/ic__delete_outline_24"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_book_genre_label"
+            app:srcCompat="@drawable/ic__delete_outline_24"
+            app:tint="@color/red" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:gravity="left"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_book_genre_label"
+            app:srcCompat="@drawable/ic__delete_outline_24"
+            app:tint="@color/red" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_share_bookItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_name_bookName_fav"
+            app:srcCompat="@drawable/ic_round_share_24"
+            app:tint="@color/fav_item_book_tint_color" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.29" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:visibility="gone"
+        android:layout_below="@id/item_parent_container_fav_book_item"
+        android:background="@color/border_color_7" />
+</RelativeLayout>

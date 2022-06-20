@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:textColor">?colorSurface</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:drawableStart">@drawable/ic_baseline_wifi_off_24</item>
+        <item name="android:drawableTint">@color/snackBarTint</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:paddingTop">@dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/design_snackbar_padding_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/mtrl_snackbar_message_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/mtrl_snackbar_message_margin_horizontal
+        </item>
+        <item name="android:maxLines">@integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+</resources>

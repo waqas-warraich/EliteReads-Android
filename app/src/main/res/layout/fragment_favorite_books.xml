@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.FavoriteBooksFragment">
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:text="hello"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="@dimen/_115sdp"
+        android:id="@+id/favorite_books_recyclerView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@+id/no_login_favorite_books"  android:gravity="center" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="100.0dip" android:layout_height="100.0dip"  app:srcCompat="@drawable/ic_outline_favorite_24" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textStyle="bold" android:textColor="@color/design_dark_default_color_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_30sdp" android:layout_marginTop="@dimen/spacing_large" android:text="@string/please_log_in_to_access_favorites" />
+        <androidx.appcompat.widget.AppCompatButton android:textAllCaps="false" android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/bt_login_favorite_books" android:background="@drawable/bg_round_corner_login_" android:layout_width="100.0dip" android:layout_height="@dimen/_40sdp"  android:text="@string/log_in_button_favorites_text" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</FrameLayout>

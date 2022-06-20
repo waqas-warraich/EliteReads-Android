@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:textAlignment="center"  android:background="@color/toolbar_background_color"  app:titleTextColor="@color/toolbar_text_color" app:title="My Account" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="@dimen/_40sdp" app:contentInsetStart="@dimen/_10sdp" app:layout_collapseMode="pin" />
+
+    <androidx.core.widget.NestedScrollView android:layout_marginBottom="@dimen/_50sdp" android:layout_marginTop="@dimen/_60sdp"
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@id/guidelineStart"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="400dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@id/guidelineEnd"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_11sdp" />
+
+            <View
+                android:id="@+id/topSpace"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/_6sdp"
+                android:tag="binding_2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llImageContainerAccounts"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+                app:layout_constraintTop_toBottomOf="@id/topSpace"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart">
+
+                <androidx.cardview.widget.CardView android:layout_margin="05dip"  android:layout_width="80.0dip" android:id="@+id/profileimage" android:layout_height="80.0dip" android:layout_centerHorizontal="true" app:cardBackgroundColor="@color/grey_lighter" app:cardCornerRadius="40.0dip" >
+                    <com.mikhaellopez.circularimageview.CircularImageView  android:id="@+id/civ_profile_image_userAccount" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/spacing_xsmall"  app:civ_border="false" app:civ_border_color="@color/grey" app:civ_border_width="0.0dip" app:civ_shadow="false" app:civ_shadow_radius="0.0dp" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView android:layout_weight="8.5" android:text="@string/user_name_placeholder_settings_fragment" android:layout_marginEnd="@dimen/_8sdp" android:id="@+id/tv_account_name"  android:textColor="@color/primaryTextColor" android:layout_width="0dp" android:layout_height="wrap_content" app:fontFamily="sans-serif-medium"  android:textSize="@dimen/_25ssp"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+
+                            android:id="@+id/ivSettingsAccount"
+
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:elevation="10.0dip"
+                            app:srcCompat="@drawable/ic_settings_black_24"
+                            android:textAllCaps="false"
+
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:visibility="gone"
+                            />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_account_email_settings_tab"
+                        android:textColor="@color/grey_40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLabelRegistration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="binding_4"
+                android:text="@string/sign_up_to_save_your_favorites_settings_fragment"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_registration_container"
+                android:visibility="visible"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/_60sdp"
+
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelRegistration">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_signup_container_profile_tab"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight=".4"
+                    style="@style/signup_button_style_with_border"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/signUp_outline_btn_text_color"
+                        android:gravity="center"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:text="@string/sign_up_settings_fragment" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sign_in_tv_btn_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight=".6"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search_btn_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:clickable="true"
+
+
+                    android:text="@string/sign_in__settings_fragment"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+            <View
+                android:id="@+id/sepLanguage"
+                style="@style/profile_menu_sep"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/ll_registration_container" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sepLanguage">
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_label_account_section1"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/settings_label_title_1"
+                android:textColor="@color/settings_heading_label_text_color"
+                android:textStyle="bold"
+
+                app:layout_constraintTop_toBottomOf="@id/sepLanguage"
+                android:text="@string/basic_settings_fragment_heading"
+                android:paddingStart="@dimen/_35sdp"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+            <View
+                android:id="@+id/account_settings_sep"
+                style="@style/profile_menu_sep"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/ll_darkMode_btn_account_settings" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="@dimen/_7sdp"
+                android:id="@+id/ll_darkMode_btn_account_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/profile_menu_text_small"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_account_section1">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_account_settings"
+                    style="@style/profile_menu_text_small"
+                    android:layout_height="@dimen/_25sdp"
+                    android:tag="binding_19"
+                    android:visibility="visible"
+                    android:drawableStart="@drawable/ic_low_brightness_20"
+                    android:text="@string/dark_mode_text_settings_fragment"
+                    app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_account_section1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_dark_mode_indicator"
+                    android:textColor="@color/text_color_grey_version_name"
+                    android:layout_width="match_parent"
+                    style="@style/profile_menu_text_small"
+
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dark_mode_on_off_text__settings_fragment"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:id="@+id/account_saved_sep"
+                android:visibility="gone"
+
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_account_saved" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_account_saved"
+                style="@style/profile_menu_text_small"
+                android:visibility="gone"
+                android:tag="binding_19"
+                android:text="Favorites"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/ll_darkMode_btn_account_settings" />
+
+
+
+            <View
+                android:id="@+id/account_manage_requests_sep"
+                android:visibility="gone"
+
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_manage_requests" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_manage_requests"
+                style="@style/profile_menu_text_small"
+                android:visibility="gone"
+                android:tag="binding_19"
+                android:text="Manage Requests"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/account_saved_sep" />
+
+
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_label_others_section"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@color/settings_label_title_1"
+                android:textColor="@color/settings_heading_label_text_color"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/account_manage_requests_sep"
+                android:text="@string/app_general_heading_text_settings_fragment"
+                android:paddingStart="@dimen/_35sdp"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/sep_feedback"
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_feedback" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:visibility="gone"
+                android:id="@+id/tv_feedback"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_20"
+                android:clickable="true"
+                android:text="Give Us Feedback"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_label_others_section" />
+
+            <View
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_contact_us_settings_tab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_contact_us_settings_tab"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_20"
+                android:clickable="true"
+                android:text="@string/contact_support_text_settings_fragment"
+                android:drawableStart="@drawable/ic_contact_support_24"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sep_feedback" />
+
+            <View
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate_us_settings_tab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_rate_us_settings_tab"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_20"
+                android:clickable="true"
+                android:text="@string/rate_this_app_text_settings_fragment"
+                android:drawableStart="@drawable/ic_round_star_border_24"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_contact_us_settings_tab" />
+
+            <View
+                android:id="@+id/sep_invite_friend"
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_share_app_settings_tab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_share_app_settings_tab"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_21"
+                android:clickable="true"
+                android:text="@string/share_this_app_text_settings_fragment"
+                android:drawableStart="@drawable/ic_baseline_share_24"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate_us_settings_tab" />
+
+
+            <View
+                android:id="@+id/sep_user_suggestion_feedback_settings_tab"
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_suggestion_feedback" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_user_suggestion_feedback"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_21"
+                android:drawableStart="@drawable/ic_feedback"
+                android:clickable="true"
+                android:text="@string/give_us_feedback_suggestions_text_settings_fragment"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sep_invite_friend" />
+
+            <View
+                android:id="@+id/sep_terms_and_conditions"
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_terms_and_conditions_settings_tab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_terms_and_conditions_settings_tab"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_22"
+                android:clickable="true"
+                android:text="@string/terms_and_conditions_text__settings_fragment"
+                android:drawableStart="@drawable/ic_terms_conditions"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sep_user_suggestion_feedback_settings_tab" />
+
+
+            <View
+                android:id="@+id/sep_about_app_accounts"
+                style="@style/profile_menu_sep"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_app_settings_tab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_about_app_settings_tab"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_22"
+                android:clickable="true"
+                android:text="@string/about_elitereads_text_settings_fragment"
+                android:drawableStart="@drawable/ic_about"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sep_terms_and_conditions" />
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_app_others_container"
+                android:layout_width="0dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/sep_about_app_accounts"
+                >
+                <TextView
+                    android:id="@+id/tv_app_version_settings_tab"
+                    android:layout_marginTop="1dip"
+                    style="@style/profile_menu_text_small"
+                    android:layout_width="fill_parent"
+                    android:text="@string/app_version_text_settings_fragment"
+                    android:visibility="gone"
+                    android:tag="binding_24"
+                    android:drawableStart="@drawable/ic_about"
+                    />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_logout"
+                    android:visibility="gone"
+                    android:height="@dimen/_55sdp"
+                    style="@style/profile_menu_text_small"
+                    android:tag="binding_23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_logout_24"
+                    android:clickable="true"
+                    android:text="@string/log_out_text_settings_fragment"
+                    android:textColor="@color/text_color_logout"
+                    android:drawableTint="@color/red"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/delete_myData_btn"
+                style="@style/profile_menu_text_small"
+                android:tag="binding_22"
+                android:visibility="gone"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:text="Delete my account"
+                android:textColor="@color/red"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/ll_app_others_container" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include android:id="@+id/progressBarAccountsTab" android:visibility="gone" layout="@layout/progressbar_white_transparent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

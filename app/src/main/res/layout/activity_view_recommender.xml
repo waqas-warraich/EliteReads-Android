@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ViewRecommenderActivity"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:background="@color/recommender_bio_bg_color_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/recommender_bio_bg_color_1"
+
+            app:titleEnabled="false">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar_viewBook_Recommender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="@color/toolbar_background_color"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                        <ImageButton
+                            android:id="@+id/ib_back_view_recommender"
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="@dimen/spacing_mxlarge"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:srcCompat="@drawable/ic_baseline_arrow_back"
+                            app:tint="@color/toolbar_tint_color" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/iv_toolbar_title_recommender"
+                            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="@string/recommender_details_title"
+                            android:textColor="@color/toolbar_text_color"
+
+                            />
+
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/ib_share_recommenderDetails"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_22sdp"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/ic_round_share_24"
+                            app:tint="@color/toolbar_tint_color" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_favorite_recommenderDetails"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/ic_round_favorite_border_24"
+                            app:tint="@color/toolbar_tint_color" />
+
+
+                    </androidx.appcompat.widget.Toolbar>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <uk.co.deanwild.flowtextview.FlowTextView
+                    android:id="@+id/ftv"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+
+                   >
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:orientation="vertical"
+                        android:padding="10dip">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/profileimage"
+                            android:layout_width="100.0dip"
+                            android:layout_height="100.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="05dip"
+                            app:cardBackgroundColor="@color/grey_lighter"
+                            app:cardCornerRadius="50.0dip">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/civ_recommender_viewBookRecommender"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="@dimen/spacing_xsmall"
+                                app:civ_border="false"
+                                app:civ_border_color="@color/grey"
+                                app:civ_border_width="0.0dip"
+                                app:civ_shadow="false"
+                                app:civ_shadow_radius="0.0dp"
+                                app:srcCompat="@drawable/person_placeholder" />
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/ibRecommenderWebSiteUrl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@color/transparent"
+                                android:src="@drawable/ic_web_18" />
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/ibRecommenderWikiUrl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@color/transparent"
+                                android:src="@drawable/ic_wikipedia_18" />
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/ibRecommenderTwitterUrl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@color/transparent"
+                                android:src="@drawable/ic_twitter_18" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </uk.co.deanwild.flowtextview.FlowTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_see_more_RecommenderDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:drawableStart="@drawable/ic_read_more_arrow_down_24"
+                    android:focusable="true"
+                    android:text="@string/read_more_text"
+                    android:textColor="@color/white">
+
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/guidelineStart"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="400dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/guidelineEnd"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_11sdp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabelRegistration"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:tag="binding_4"
+
+            android:text="@string/recommended_books_heading"
+            android:textColor="@color/toolbar_text_color"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+
+
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/topSpace" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/book_recommender_books_recycler"
+            android:visibility="visible"
+
+            android:clipToPadding="false"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/book_item_offset"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

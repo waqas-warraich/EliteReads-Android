@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_round_edge_dialog"
+    android:divider="?android:dividerHorizontal"
+    android:dividerPadding="8dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_alert_dialog"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/toolbar_text_color"
+        android:gravity="center"
+        android:textSize="@dimen/_18ssp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/are_you_sure_you_want_to_log_out_dailog_title" />
+
+    <View
+        style="@style/profile_menu_sep"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_rate_us_settings_tab" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="?android:buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alert_btn_no"
+
+            style="?android:buttonBarButtonStyle"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no_option_text_logout_dailog" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="fill_parent"
+            android:background="@color/lightgrey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alert_btn_yes"
+            style="?android:buttonBarButtonStyle"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes_option_text_logout_dailog" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

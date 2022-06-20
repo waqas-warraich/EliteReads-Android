@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical"  android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/img_no_internet_satellite" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:textColor="@color/design_dark_default_color_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_internet_connection" />
+            <androidx.appcompat.widget.AppCompatTextView   android:gravity="center" android:textColor="@color/text_color_grey_version_name"  android:layout_width="300.0dip" android:textAllCaps="false" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:text="@string/no_internet_connections_found_text" />
+            <androidx.appcompat.widget.AppCompatButton android:textAllCaps="false" android:textSize="20sp" android:textColor="@android:color/white" android:id="@+id/bt_retry" android:background="@drawable/bg_round_corner_login_" android:layout_width="200.0dip" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/spacing_xlarge" android:text="@string/try_again_button_text" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

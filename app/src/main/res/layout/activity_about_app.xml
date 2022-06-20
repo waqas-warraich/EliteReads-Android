@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.AboutAppActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar_activity_about_app"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_background_color"
+        android:elevation="@dimen/toolbar_elevation"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/ib_back_aboutAppActivity"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="@dimen/spacing_mxlarge"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_baseline_arrow_back"
+            app:tint="@color/toolbar_tint_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/iv_toolbar_title_bookDetailsActivity"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="@string/about_app_toolbar_title"
+            android:textColor="@color/toolbar_text_color"
+
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <include
+        android:id="@+id/divider_privacy_toolbar_"
+        layout="@layout/filter_blocks_seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/toolbar_about_app"
+
+        />
+
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_activity_about_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_below="@+id/divider_privacy_toolbar_"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_app_version_container"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/divider_privacy_toolbar_"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="2.0dip"
+                android:paddingRight="@dimen/_40sdp"
+                android:text="Application version"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_privacy_toolbar_"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="2.0dip"
+                android:paddingRight="@dimen/_40sdp"
+                android:text="@string/app_version"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/text_color_grey_version_name"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/divider_deactivate"
+            layout="@layout/filter_blocks_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ll_app_version_container"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_open_source_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/divider_deactivate"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2.0dip"
+            android:paddingRight="@dimen/_40sdp"
+            android:text="@string/open_source_licences_tv_text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+
+            android:textSize="@dimen/_16ssp" />
+
+        <include
+            layout="@layout/filter_blocks_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv_open_source_btn"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_graphics_attribution_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/tv_open_source_btn"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2.0dip"
+            android:paddingRight="@dimen/_40sdp"
+
+            android:text="@string/elitereads_project_resources_attributions_tv_text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+
+            android:textSize="@dimen/_16ssp" />
+
+        <include
+            layout="@layout/filter_blocks_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/tv_graphics_attribution_btn" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

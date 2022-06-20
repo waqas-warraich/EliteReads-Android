@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  android:background="@drawable/bg_item_border_gray" android:layout_margin="@dimen/_10sdp" android:id="@+id/item_rec_1_parent" android:tag="layout/row_listing_horizontal_0" android:paddingBottom="@dimen/_5sdp" android:layout_width="155dip" android:layout_height="228dip" android:layout_marginBottom="@dimen/_2sdp" android:foreground="?android:selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@+id/imageContainer" android:layout_width="0.0dip" android:layout_height="@dimen/_125sdp" app:cardCornerRadius="@dimen/home_image_content_radius" app:cardElevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@+id/iv_profile_image_item_rec_1" android:layout_width="155dip" android:layout_height="@dimen/_120sdp" android:scaleType="centerCrop" android:adjustViewBounds="true" app:srcCompat="@drawable/horizontal_placeholder" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

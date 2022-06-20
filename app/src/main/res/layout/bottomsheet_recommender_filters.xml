@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:animateLayoutChanges="true"
+    android:theme="@style/edit_text_hint_theme_1"
+    android:background="@drawable/rounded_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/header_container_fee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_by_tag_bottomsheet_title"
+
+
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_close_btn_fee_bottom_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="10"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:text="@string/close_filter_bottomsheet_button"
+            android:textColor="@color/primaryTextColor" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/price_range_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/header_container_fee"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.google.android.material.chip.ChipGroup
+
+            android:id="@+id/recommenders_filter_chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_ViewAllRecommenders"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip2"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actor" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip3"
+
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athlete" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip4"
+
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip5"
+
+
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billionaire" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip6"
+
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chef" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip7"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comedian" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip8"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip9"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrepreneur" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip10"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Executive" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip11"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filmmaker" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip12"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitness" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip13"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Investor" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip14"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journalist" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip15"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip16"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musician" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip17"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip18"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Politician" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip19"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Producer" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterChip20"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scientist" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/error_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_range_container"
+        android:layout_marginStart="@dimen/_25sdp"
+
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/grey_lighter"
+            android:inputType="number"
+            android:maxLength="6"
+            android:text="0"
+            android:visibility="invisible">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_error_fee_range_quick_filters"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_weight="6"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Should be greater than min number"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12ssp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/apply_btn_fee_bottom_sheet_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_container"
+        android:layout_gravity="center"
+        android:layout_marginStart="25.0dip"
+        android:layout_marginEnd="25.0dip"
+        android:layout_marginBottom="25.0dip"
+        android:background="@drawable/bg_round_corner_apply"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin2"
+        android:text="@string/apply_filter_button_text"
+        android:textColor="@color/white"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+</RelativeLayout>

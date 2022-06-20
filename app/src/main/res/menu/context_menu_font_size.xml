@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item
+        android:id="@+id/increase_font_cm"
+        android:title="Increase font"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/decrease_font_cm"
+
+        app:showAsAction="always"
+        android:title="Decrease font" />
+
+    <item
+        android:id="@+id/reset_font_cm"
+
+        app:showAsAction="always"
+        android:title="Reset" />
+
+</menu>

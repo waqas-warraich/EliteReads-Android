@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_height="wrap_content">
+
+
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:layout_width="@dimen/_60sdp"
+           android:layout_gravity="center"
+           android:visibility="visible"
+           android:layout_height="@dimen/_70sdp"
+
+           android:src="@drawable/ic_topreads_icon"
+           app:tint="@color/home_logo_color_1" />
+
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:text="top"
+           android:layout_gravity="center"
+           android:textSize="@dimen/_30ssp"
+           android:layout_marginBottom="@dimen/_5sdp"
+           android:textColor="@color/home_logo_color_1"
+
+           />
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/_2sdp"
+           android:text="reads"
+           android:layout_gravity="center"
+           android:textSize="@dimen/_30ssp"
+           android:layout_marginBottom="@dimen/_5sdp"
+
+           android:textColor="@color/home_logo_color_1"
+           android:textStyle="bold" />
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

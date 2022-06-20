@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+  <!--<color name="colorPrimary">#ff1865f2</color>
+  <color name="colorPrimaryDark">#ff0a2a66</color>
+  <color name="colorPrimaryLight">#ff0d3d82</color>-->
+
+
+  <color name="colorPrimary">@color/teal_light</color>
+  <color name="colorPrimaryDark">@color/teal_dark</color>
+  <color name="colorPrimaryLight">@color/primaryBackground</color>
+
+  <color name="colorSecondary">@color/primaryBackground</color>
+  <color name="colorSecondaryVariant">@color/teal_logo</color>
+
+  <color name="text_color_grey_version_name">@color/grey_40</color>
+
+  <color name="default_pressed">@color/teal_dark</color>
+
+  <color name="otherPrimary">@color/teal_light</color>
+
+  <color name="emailLoginColor">#EA4335</color>
+  <color name="emailLoginColorPressed">#BB001B</color>
+
+  <color name="primaryTextColor">@color/white</color>
+  <color name="text_color_small_heading">@color/grey_lighter</color>
+  <color name="home_logo_color_1">@color/teal_light</color>
+  <color name="home_logo_color_2">@color/teal_light</color>
+  <color name="home_rv_text_color_small_heading">@color/white</color>
+
+  <color name="primaryBackground">#ff051e25</color>
+  <color name="secondaryBackground">@color/c9</color>
+
+  <!--<color name="login_bg_button_color_1">#261e7b85</color>-->
+  <color name="login_bg_button_color_1">@color/teal_light</color>
+  <color name="login_bg_button_color_2">@color/teal_regular</color>
+
+  <color name="toolbar_background_color">@color/primaryBackground</color>
+  <color name="toolbar_text_color">@color/white</color>
+  <color name="toolbar_tint_color">@color/grey_light</color>
+
+  <color name="recommender_bio_text_color_1">@color/white</color>
+  <color name="recommender_bio_bg_color_1">#261e7b85</color>
+  <color name="recommender_item_text_color_1">#FFFFFFFF</color>
+  <color name="recommender_item_text_color_2">@color/border_color_28</color>
+  <color name="recommender_item_text_color_3">@color/white</color>
+  <color name="recommender_item_text_color_4">@color/white</color>
+  <color name="recommender_item_text_color_5">@color/white</color>
+
+  <color name="recommender_item_card_bg_color">@color/grey_lighter</color>
+
+  <color name="recommended_books_color_1">@color/white</color>
+  <color name="recommended_books_color_2">@color/white</color>
+  <color name="recommended_books_color_3">@color/white</color>
+  <color name="recommended_books_color_4">@color/white</color>
+
+  <color name="snackBarTint">@color/black_shade</color>
+
+
+  <color name="audioPlayer_bg_color_1">#ff051e25</color>
+  <color name="audioPlayer_progress_color">@color/teal_light</color>
+  <color name="jcPlayer_next_previous_icon_color">#261e7b85</color>
+
+  <color name="dialog_logout_background_color">@color/hero_background</color>
+
+  <color name="bottom_sheet_bg_color_1">@color/hero_background</color>
+
+  <color name="settings_label_title_1">@color/teal_regular_15_opacity</color>
+
+  <color name="tabLayout_bg_color_1">@color/teal_regular_15_opacity</color>
+
+  <color name="registration_til_stroke_bg_color">@color/black_shade</color>
+  <color name="registration_toolbar_bg_color">@color/white</color>
+  <color name="registration_toolbar_text_color">@color/black_shade</color>
+  <color name="registration_toolbar_tint_color">@color/black_shade</color>
+  <color name="registration_layout_bg_color">@color/white</color>
+  <color name="registration_link_text_text_color">@color/teal_logo</color>
+
+
+
+  <color name="book_book_cover_bg_color">@color/grey</color>
+  <color name="book_details_book_info_bg_color">@color/teal_regular_15_opacity</color>
+  <color name="book_details_book_name_color">@color/white</color>
+  <color name="book_details_info_label_color">@color/lightgrey</color>
+  <color name="book_details_info_value_color">@color/white</color>
+  <color name="book_description_bg_color">@color/teal_regular_15_opacity</color>
+  <color name="book_description_text_color">@color/grey_light</color>
+  <color name="book_summary_buttons_bg_color">@color/teal_logo</color>
+  <color name="book_summary_buttons_text_color">@color/white</color>
+  <color name="book_summary_buttons_bg_tint_color">@color/white</color>
+  <color name="book_dd_button_bg_color">@color/light_green</color>
+  <color name="book_dd_button_text_color">@color/white</color>
+  <color name="book_dd_button_tint_color">@color/white</color>
+  <color name="recommender_quote_bg_color">@color/black_shade</color>
+  <color name="recommender_quote_text_color">@color/grey_light</color>
+  <color name="recommender_quote_author_color">@color/amber</color>
+  <color name="recommender_quote_sourceLink_color">@color/blue</color>
+
+
+  <color name="fav_item_book_name_text_color">@color/snow_200</color>
+  <color name="fav_item_book_info_label_color">@color/disable_state_color</color>
+  <color name="fav_item_book_info_value_color">@color/snow_200</color>
+  <color name="fav_item_book_tint_color">@color/snow_200</color>
+  <color name="fav_item_book_layout_bg_color">@color/teal_regular_15_opacity</color>
+
+
+  <color name="fav_item_recommender_name_text_color">@color/snow_200</color>
+  <color name="fav_item_recommender_about_label_color">@color/disable_state_color</color>
+  <color name="fav_item_recommender_about_value_color">@color/snow_200</color>
+  <color name="fav_item_recommender_tint_color">@color/snow_200</color>
+  <color name="fav_item_recommender_layout_bg_color">@color/teal_regular_15_opacity</color>
+
+  <color name="settings_heading_label_text_color">@color/grey_light</color>
+
+  <color name="signUp_outline_btn_bg_color_1">#ff051e25</color>
+  <color name="signUp_outline_btn_border">@color/grey_lighter</color>
+  <color name="signUp_outline_btn_text_color">@color/grey_lighter</color>
+  <color name="signUp_outline_btn_border_text_bg_color">@color/teal_light</color>
+
+  <color name="text_color_1">#ffc9c9c9</color>
+  <color name="text_color_13">#ff535353</color>
+  <color name="text_color_23">#ff1f1f1f</color>
+  <color name="text_color_24">#ff1152b0</color>
+  <color name="text_color_28">#fff47a20</color>
+  <color name="text_color_29">#ff707070</color>
+  <color name="text_color_3">#ff414141</color>
+
+  <color name="text_color_35">#ff4c4a4a</color>
+  <color name="text_color_39">#ff5f6368</color>
+  <color name="text_color_6">#ff222222</color>
+  <color name="text_color_9">#ff222222</color>
+  <color name="text_color_logout">#ffe72b2b</color>
+
+
+  <color name="purple_200">#FFBB86FC</color>
+  <color name="purple_500">#FF6200EE</color>
+  <color name="purple_700">#FF3700B3</color>
+  <color name="teal_200">#FF03DAC5</color>
+  <color name="teal_700">#FF018786</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+
+  <color name="text_color_30">#ff1f1f1f</color>
+
+  <color name="black_transparent">#99000000</color>
+
+  <color name="grey_60">#ff666666</color>
+
+
+  <color name="grey_40">#ff999999</color>
+  <color name="background_color">#fff8f9fb</color>
+  <color name="background_color_3">#fff5f5f5</color>
+  <color name="bg_fav_color">@color/grey_light</color>
+
+
+  <color name="black_shade">#ff494949</color>
+  <color name="colorPrimaryNew">#ff494949</color>
+
+
+  <color name="amber">#FFC107</color>
+  <color name="waqas">#e9e5cd	</color>
+  <color name="amber2">#FFB74D</color>
+  <color name="blue">#ff4fa7dd</color>
+  <color name="border_color_10">#ffeae8e9</color>
+  <color name="border_color_16">#fff0f0f0</color>
+  <color name="border_color_17">#ffe8e8e8</color>
+  <color name="border_color_19">#ff7ed8aa</color>
+  <color name="border_color_20">#ffe0e4e7</color>
+  <color name="border_color_26">#ffe6e6e6</color>
+  <color name="border_color_28">#ffc4c4c4</color>
+  <color name="border_color_3">#ff959292</color>
+  <color name="border_color_5">#fff4f4f4</color>
+  <color name="border_color_6">#fff5f5f5</color>
+  <color name="border_color_7">#ffe6e6e6</color>
+  <color name="lightgrey">#ffe0e0e0</color>
+  <color name="fontColor">#ff616161</color>
+
+
+  <color name="colorGrayBorder">#ffebebeb</color>
+
+  <color name="dark_green">#ff006400</color>
+
+  <color name="disable_state_color">#ffd5d5d5</color>
+  <color name="grey">#ff6d6e71</color>
+  <color name="grey_city_cg">#ffe8e8e8</color>
+  <color name="grey_light">#ffefefef</color>
+  <color name="grey_lighter">#fff8f9fb</color>
+
+
+  <color name="light_green">#e627b16d</color>
+  <color name="location_color">#ff989898</color>
+  <color name="mk_loader_color">#9927b16d</color>
+  <color name="red">#ffd31a1a</color>
+  <color name="splash_bg_color">#ff28b16d</color>
+
+
+  <color name="toolbar_bg_color">@color/teal_logo</color>
+
+  <color name="transparent">#00000000</color>
+  <color name="hero_background">#ff00293f</color>
+
+
+  <color name="teal_dark">#ff0d6069</color>
+  <color name="teal_light">#ff509ba8</color>
+  <color name="teal_logo">#ff1e7b85</color>
+  <color name="teal_menu">@color/teal_regular</color>
+  <color name="teal_regular">#ff1e7b85</color>
+  <color name="teal_regular_15_opacity">#261e7b85</color>
+  <color name="test_color">#ff000000</color>
+  <color name="translucent_slate_600">#33666666</color>
+  <color name="snow_200">#fff8f9fd</color>
+  <color name="slate_600">#ff57617a</color>
+
+
+
+</resources>

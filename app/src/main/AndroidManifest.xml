@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.titanreads.topreads">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_topreads"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_topreads_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EliteReads">
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ExploredRecommendersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ExploredBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.AppUserFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.AppRatingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.AudioSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewAllRecommendersActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewBookDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.BookDownloadWebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.BookTextSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewRecommenderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.VideoSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewAllInvestmentBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewAllBiographyBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewAllTechBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.ViewAllMostRecommendedBooksActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.AdvertisementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.AboutAppActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.SignUpWithEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.titanreads.topreads.ui.activities.SplashscreenActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

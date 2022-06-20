@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.PrivacyPolicyActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_app_privacy_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_background_color"
+        android:tag="layout/toolbar_with_back_btn_0"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetLeft="0.0dip"
+        android:elevation="@dimen/toolbar_elevation"
+        app:contentInsetRight="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_back_privacyPolicyActivity"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="@dimen/spacing_mxlarge"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:srcCompat="@drawable/ic_baseline_arrow_back"
+            app:tint="@color/toolbar_tint_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/iv_toolbar_title_privacyPolicyActivity"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="@string/terms_and_privacy_policy"
+            android:textColor="@color/toolbar_text_color"
+            android:visibility="visible"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_brightness_privacyPolicyActivity"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_22sdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_round_high_brightness_24"
+            app:tint="@color/toolbar_tint_color" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar_horizontal"
+        android:layout_width="match_parent"
+        android:progressBackgroundTint="@color/blue"
+        android:indeterminate="false"
+        android:progress="0"
+        android:max="100"
+        android:layout_below="@+id/toolbar_app_privacy_policy"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"/>
+
+    <include android:id="@+id/progressBarSignUpPrivacy" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_below="@+id/divider_privacy_toolbar_" android:visibility="gone" layout="@layout/progressbar_white_transparent" />
+
+
+    <WebView
+        android:id="@+id/webView"
+
+        android:layout_below="@+id/progress_bar_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/no_internet_page_privacy"
+        layout="@layout/layout_no_internet_page_home"
+        android:layout_below="@id/toolbar_app_privacy_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+</RelativeLayout>

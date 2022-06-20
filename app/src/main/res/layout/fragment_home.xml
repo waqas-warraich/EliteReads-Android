@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main_home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4.0dip"
+        android:tag="layout/toolbar_with_back_btn_0"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetRight="0.0dip"
+        app:contentInsetStart="0.0dip"
+        android:background="@color/toolbar_background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_height="35dip"
+                app:tint="@color/colorPrimary"
+                android:src="@drawable/ic_topreads_icon"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="top"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:textSize="20.0sp"
+                android:textColor="@color/home_logo_color_1"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:text="reads"
+                android:layout_gravity="center"
+                android:textSize="20.0sp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/home_logo_color_1"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout android:id="@+id/ll_rvs_home" app:layout_constraintTop_toBottomOf="@+id/toolbar_main_home_tab" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="parent" android:orientation="vertical"  android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="@dimen/_150sdp" android:paddingBottom="@dimen/_20sdp" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_15sdp"
+                    />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_recommenders_recycler_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.9"
+                            android:text="@string/home_heading_recommended_books_by"
+                            android:textStyle="bold"
+                            android:textColor="@color/home_rv_text_color_small_heading" />
+
+                        <TextView
+                            android:id="@+id/tv_view_all_recommenders_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
+                            android:layout_weight=".1"
+                            android:drawableTint="@color/toolbar_tint_color"
+                            android:gravity="end"
+                            android:textAlignment="textEnd"
+                            android:text="@string/view_all_home_fragment_text"
+                            android:textColor="@color/blue"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/_10sdp" android:orientation="horizontal" android:id="@+id/book_recommender_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="150dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_rec_bitcoin_books_recycler_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.9"
+                            android:textStyle="bold"
+                            android:text="@string/home_heading_most_recommended_bitcoin_books"
+                            android:textColor="@color/home_rv_text_color_small_heading" />
+
+                        <TextView
+                            android:id="@+id/tv_view_all_bitcoin_books_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:gravity="end"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:drawableTint="@color/toolbar_tint_color"
+
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
+                            android:text="@string/view_all_home_fragment_text"
+                            android:textColor="@color/blue"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/_10sdp" android:orientation="horizontal" android:id="@+id/bitcoin_books_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="190dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_rec_tech_books_recycler_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.9"
+                            android:textStyle="bold"
+                            android:text="@string/home_heading_most_recommended_tech_books"
+                            android:textColor="@color/home_rv_text_color_small_heading" />
+
+                        <TextView
+                            android:id="@+id/tv_view_all_tech_books_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:gravity="end"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:drawableTint="@color/toolbar_tint_color"
+
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
+                            android:text="@string/view_all_home_fragment_text"
+                            android:textColor="@color/blue"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/_10sdp" android:orientation="horizontal" android:id="@+id/tech_books_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="190dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_rec_biography_books_recycler_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.9"
+                            android:textStyle="bold"
+                            android:text="@string/home_heading_most_recommended_biography_books"
+                            android:textColor="@color/home_rv_text_color_small_heading" />
+
+                        <TextView
+                            android:id="@+id/tv_view_all_biography_books_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:gravity="end"
+                            android:text="@string/view_all_home_fragment_text"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:drawableTint="@color/toolbar_tint_color"
+
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
+                            android:textColor="@color/blue"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/_10sdp" android:orientation="horizontal" android:id="@+id/biography_books_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="190dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_rec_investment_books_recycler_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.9"
+                            android:textStyle="bold"
+                            android:text="@string/most_home_heading_recommended_investment_books"
+                            android:textColor="@color/home_rv_text_color_small_heading" />
+
+                        <TextView
+                            android:id="@+id/tv_view_all_investment_books_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:gravity="end"
+                            android:text="@string/view_all_home_fragment_text"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:drawableTint="@color/toolbar_tint_color"
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
+                            android:textColor="@color/blue"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/_10sdp" android:orientation="horizontal" android:id="@+id/investment_books_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="190dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

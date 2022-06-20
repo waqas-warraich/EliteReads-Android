@@ -1,0 +1,8 @@
+<resources>
+        <dimen name="fab_margin">48dp</dimen>
+        <dimen name="book_item_offset">47dip</dimen>
+        <dimen name="recommender_item_offset">30dip</dimen>
+
+
+
+</resources>

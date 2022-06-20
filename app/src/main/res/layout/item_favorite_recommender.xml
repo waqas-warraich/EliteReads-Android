@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  android:id="@+id/item_favorite_recommender" android:layout_marginTop="@dimen/_3sdp" android:background="@color/fav_item_recommender_layout_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" app:cardUseCompatPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_parent_container_fav_recommender_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_7sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvprofileimage"
+            android:layout_width="110.0dip"
+            android:layout_height="110.0dip"
+
+            android:visibility="visible"
+            app:cardCornerRadius="60.0dip"
+            app:cardElevation="3.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/civ_recommender_profile_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/spacing_xsmall"
+                app:civ_border="false"
+
+                app:civ_border_color="@color/dark_green"
+                app:civ_border_width="0.0dip"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0.0dp"
+                app:srcCompat="@drawable/elon_musk" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_container"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_recommender_profile_image"
+                android:layout_width="120dip"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/elon_musk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_fav_recommender_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Elon Musk"
+            android:textColor="@color/fav_item_recommender_name_text_color"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/iv_share_favorite_recommender_item"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/item_tutor_profile_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/text_color_23"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_fav_recommender_name_item"
+            app:layout_constraintStart_toEndOf="@id/tv_fav_recommender_name_item"
+            app:layout_constraintTop_toTopOf="@id/tv_fav_recommender_name_item" />
+
+
+        <TextView
+            android:id="@+id/tv_recommender_professional_title"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="Profession:"
+            android:textColor="@color/fav_item_recommender_about_label_color"
+            android:visibility="visible"
+
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav_recommender_name_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recommender_profession_value"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="Engineer"
+            android:textColor="@color/fav_item_recommender_about_value_color"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_recommender_professional_title"
+            app:layout_constraintStart_toEndOf="@id/tv_recommender_professional_title" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_recommender_country_label"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="05dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="Country:"
+            android:textColor="@color/fav_item_recommender_about_label_color"
+            android:visibility="visible"
+
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_recommender_professional_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recommender_country_value"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="United State of America"
+            android:textColor="@color/fav_item_recommender_about_value_color"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_recommender_country_label"
+            app:layout_constraintStart_toEndOf="@id/tv_recommender_country_label" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recommender_known_for_label"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="Known for: "
+            android:textColor="@color/fav_item_recommender_about_label_color"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_recommender_country_label" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recommender_knowFor_value_favItem"
+            style="@style/horizontal_profiles_searched_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="Founder SpaceX"
+            android:textColor="@color/fav_item_recommender_about_value_color"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_recommender_known_for_label"
+
+            app:layout_constraintEnd_toStartOf="@id/iv_share_favorite_recommender_item"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toEndOf="@id/tv_recommender_known_for_label" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_share_favorite_recommender_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:src="@drawable/ic_round_share_24"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_fav_recommender_name_item"
+            app:tint="@color/fav_item_recommender_tint_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_remove_favorite_recommender_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tutor_profile_horz_item_margin"
+
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:src="@drawable/ic__delete_outline_24"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tv_recommender_known_for_label"
+            app:layout_goneMarginEnd="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic__delete_outline_24"
+            app:tint="@color/red" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.32" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:visibility="gone"
+        android:layout_below="@id/item_parent_container_fav_recommender_item"
+        android:background="@color/border_color_7" />
+</RelativeLayout>

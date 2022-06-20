@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable-v24/bg_round_corner_login_.xml" value="0.228" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable-v24/ic_topreads_icon_teal.xml" value="0.196" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_quick_filter_item.xml" value="0.2495" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_contact_tutor_buttons.xml" value="0.2545" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_corner_apply.xml" value="0.2095" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_corner_background_promoted.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_corner_login_.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_corner_sign_up_email.xml" value="0.2005" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_corner_sign_up_google.xml" value="0.2005" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_round_edge_dialog.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_rounded_description.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/bg_rounded_quote.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/blue_background_selector.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/elite_reads_icon.xml" value="0.2465" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_about.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_audio_forward_30_24.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_audio_replay_30_24.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.2095" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.256" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_brightness_1_black_24dp.xml" value="0.2265" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_brightness_high_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_brightness_low_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_contact_support_24.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_contact_us_18.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_cross_24.xml" value="0.2495" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_elite_reads_new_logo.xml" value="0.2465" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_elitereads_book_logo.xml" value="0.2465" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_elitereadslogo.xml" value="0.253" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_fav_group.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_feedback.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_feedback_24.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_globe_20.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_google_square.xml" value="0.2005" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_headset_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_heart.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_low_brightness_20.xml" value="0.245" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_outline_favorite_24.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_outline_rate_review_24.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_outline_video_play_24.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_pause_circle_24.xml" value="0.2265" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_play_circle_filled_black_24dp.xml" value="0.2265" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_privacy.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_quick_filter.xml" value="0.1975" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_read_summary.xml" value="0.196" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_brightness_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_font_size_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_high_brightness_24.xml" value="0.217" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_share_24.xml" value="0.245" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_star_border_24.xml" value="0.2485" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_star_border_30.xml" value="0.2485" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_round_star_filled_40.xml" value="0.2445" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_terms_conditions.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_thumb_up__24dp.xml" value="0.2215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_topreads_icon_teal.xml" value="0.196" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_twitter_18.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_update_app.xml" value="0.2385" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_web_15.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/ic_wikipedia_18.xml" value="0.2255" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/letsearch_btn_bg.xml" value="0.1995" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/rounded_dialog.xml" value="0.2095" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/search_btn_bg.xml" value="0.2755" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/v2_bg_round_corner_download.xml" value="0.2385" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/drawable/v2_bg_round_corner_login.xml" value="0.245" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/font/font.xml" value="0.4107692307692308" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_about_app.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_add_book_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_add_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_advertisement.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_all_book_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_app_rating.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_app_user_feedback.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_audio_summary.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_details.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_download_webView.xml" value="0.3799814643188137" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_download_web_view.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_review.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_summary.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_text_summary.xml" value="0.25" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_book_text_summary_web_view.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_explored_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_explored_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_favorites.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_forget_password.xml" value="0.25" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_main2.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_privacy_policy.xml" value="0.32685185185185184" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_sign_up_with_email.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_splashscreen.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_terms_privacy.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_video_summary.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_biography_books.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_bitcoin_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_investment_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_most_recommended_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_all_tech_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_book_details.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/activity_view_recommender.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/alert_dialog_mtrl.xml" value="0.3453125" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/blocks_seprator.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/bottomsheet_recommender_filters.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/content_book_video_summary.xml" value="0.3648148148148148" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/dialog_rate_screen1.xml" value="0.381025641025641" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/dialog_update_app.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/dialog_update_app_small.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/filter_blocks_seprator.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_dark_mode.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_dark_mode_settings.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_explore.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_explore_books.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_explore_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_favorite_books.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_favorite_recommenders.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_favorites.xml" value="0.381025641025641" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_favorites_tab.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_home.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_rating_one.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_rating_screen_one.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_rating_two.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_recommenders_tab.xml" value="0.381025641025641" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_all_recommenders_filter.xml" value="0.381025641025641" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_book.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_book_recommender.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_book_recommender_verticle.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_book_verticle_layout.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_explore_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_explore_recommender.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_explore_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_favorite_book.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_favorite_recommender.xml" value="0.33" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_recommender_quote.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/item_tutor_recommendation_1.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/layout_dialog_dark_mode_settings.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/layout_no_favorites_page.xml" value="0.3453125" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/layout_no_internet_page.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/layout_no_internet_page_home.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/layout_no_search_result.xml" value="0.3453125" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/progressbar_transparent_bg.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/progressbar_white_transparent.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/layout/recommender_filters_bottomsheet.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/menu/bottom_nav_menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/menu/context_menu_font_size.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/menu/context_menu_text_summary.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/menu/menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.253" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/EliteReads Project Work/EliteReads/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.253" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable-v24/btn_bg_clear_all.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_item_border_gray.xml" value="0.215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_rect_border_gray.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_round_contact_tutor_buttons.xml" value="0.215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_round_corner_background_promoted.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_rounded_description.xml" value="0.22" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/bg_rounded_quote.xml" value="0.22" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/blue_background_selector.xml" value="0.215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/btn_corner5.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/clear_all_btn_bg.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_amazon_icon.xml" value="0.22" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_baseline_arrow_forward_18.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_baseline_cloud_done_24.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.3065" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_bubble_curve_quote.xml" value="0.22" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_headset_24.xml" value="0.22" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_outline_file_download_24.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/ic_read_summary.xml" value="0.237" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/letsearch_btn_bg.xml" value="0.215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/drawable/search_btn_bg.xml" value="0.215" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_about_app.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_add_book_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_add_books.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_all_book_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_view_all_recommenders.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_view_book_details.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/activity_view_recommender.xml" value="0.3213667820069204" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/fragment_favorites.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/fragment_home.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/fragment_settings.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/item_book.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/item_book_recommender.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/item_recommender_quote.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/layout/item_tutor_recommendation_1.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/iAT/Documents/MyAndroidProjectsApril2022/JavaProjects/app/src/main/res/menu/bottom_nav_menu.xml" value="0.38697916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
