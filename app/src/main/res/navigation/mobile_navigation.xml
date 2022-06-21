@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.titanreads.topreads.ui.fragments.HomeFragment"
+        android:name="com.recommendations.books.ui.fragments.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_explore"
-        android:name="com.titanreads.topreads.ui.fragments.ExploreFragment"
+        android:name="com.recommendations.books.ui.fragments.ExploreFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_explore" />
 
     <fragment
         android:id="@+id/navigation_favorites"
-        android:name="com.titanreads.topreads.ui.fragments.FavoritesFragment"
+        android:name="com.recommendations.books.ui.fragments.FavoritesFragment"
         android:label="@string/title_favorites"
         tools:layout="@layout/fragment_favorites" />
 
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.titanreads.topreads.ui.fragments.SettingsFragment"
+        android:name="com.recommendations.books.ui.fragments.SettingsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_settings" >
 
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/fragmentDarkModeSettings"
-        android:name="com.titanreads.topreads.ui.fragments.SettingsFragment"
+        android:name="com.recommendations.books.ui.fragments.SettingsFragment"
         android:label="fragment_one"
         tools:layout="@layout/fragment_dark_mode">
 

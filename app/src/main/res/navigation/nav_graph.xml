@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.titanreads.topreads.ui.fragments.SettingsFragment"
+        android:name="com.recommendations.books.ui.fragments.SettingsFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_settings" >
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.titanreads.topreads.ui.fragments.DarkModeFragment"
+        android:name="com.recommendations.books.ui.fragments.DarkModeFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_dark_mode" >
 

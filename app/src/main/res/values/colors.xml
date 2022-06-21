@@ -2,7 +2,7 @@
 <resources>
 
 
-    <color name="colorPrimary">@color/teal_logo</color>
+    <color name="colorPrimary">@color/pink_carnation</color>
     <color name="colorPrimaryDark">@color/teal_light</color>
     <color name="colorPrimaryLight">@color/teal_dark</color>
 
@@ -233,8 +233,25 @@
     <color name="cd">#ffbebebe</color>
 
 
+    <color name="pink_carnation">#fff54a66</color>
+    <color name="pink_dark">#ffdd2476</color>
+    <color name="pink_light">#ffffddd6</color>
+    <color name="pink_light2">#ffff8572</color>
+    <color name="pink_losos">#ffeb4868</color>
+    <color name="pink_sweet">#fff992a3</color>
+
+    <color name="orange_accent">@color/orange_losos</color>
+    <color name="orange_bright">#ffffcd56</color>
+    <color name="orange_losos">#fff86572</color>
+    <color name="orange_losos_80_opacity">#ccf86572</color>
+    <color name="orange_losos_bleached">#fff9838e</color>
+    <color name="orange_losos_darker">#fff54a66</color>
+    <color name="orange_losos_geraldine">@color/orange_losos_bleached</color>
+    <color name="orange_persimmon">@color/orange_pinkish</color>
+    <color name="orange_pinkish">#ffff7358</color>
 
 
 
-
+    <color name="logo_splash_screen">#fff54a66</color>
+    <color name="main_button_purple_dark">#ff920abc</color>
 </resources>
