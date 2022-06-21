@@ -2,7 +2,7 @@
 <resources>
 
 
-    <color name="colorPrimary">@color/pink_carnation</color>
+    <color name="colorPrimary">@color/logo_splash_screen</color>
     <color name="colorPrimaryDark">@color/teal_light</color>
     <color name="colorPrimaryLight">@color/teal_dark</color>
 
@@ -250,7 +250,12 @@
     <color name="orange_persimmon">@color/orange_pinkish</color>
     <color name="orange_pinkish">#ffff7358</color>
 
-
+    <color name="active_button">@color/orange_losos_darker</color>
+    <color name="author_info_books_count">@color/orange_losos_darker</color>
+    <color name="splash_gradient_center_color">#ffdf2b73</color>
+    <color name="splash_gradient_start_color">#fffe775f</color>
+    <color name="reader_settings_menu_background">#ff4b5b5a</color>
+    <color name="selected_book_actions_gradient_center_color">@color/white</color>
 
     <color name="logo_splash_screen">#fff54a66</color>
     <color name="main_button_purple_dark">#ff920abc</color>

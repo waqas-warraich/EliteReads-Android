@@ -35,31 +35,30 @@
                 android:layout_gravity="center"
                 android:layout_height="35dip"
                 app:tint="@color/colorPrimary"
-                android:src="@drawable/ic_topreads_icon"
+                android:src="@drawable/ic_elitereads_icon_logo_color_transparent_bg_no_margin_v2"
                 />
 
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="top"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="elite"
+
+
                 android:layout_gravity="center"
                 android:textSize="20.0sp"
-                android:textColor="@color/home_logo_color_1"
+                android:textColor="@color/logo_splash_screen"
 
                 />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginLeft="1.5dip"
                 android:text="reads"
                 android:layout_gravity="center"
                 android:textSize="20.0sp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:textColor="@color/home_logo_color_1"
+                android:textColor="@color/logo_splash_screen"
                 android:textStyle="bold" />
 
 

@@ -25,32 +25,31 @@
            android:visibility="visible"
            android:layout_height="@dimen/_70sdp"
 
-           android:src="@drawable/ic_topreads_icon"
-           app:tint="@color/home_logo_color_1" />
+           android:src="@drawable/ic_elitereads_icon_logo_color_transparent_bg_no_margin_v2"
+           app:tint="@color/logo_splash_screen" />
 
 
        <androidx.appcompat.widget.AppCompatTextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginStart="@dimen/_10sdp"
-           android:text="top"
+           android:text="elite"
            android:layout_gravity="center"
            android:textSize="@dimen/_30ssp"
-           android:layout_marginBottom="@dimen/_5sdp"
-           android:textColor="@color/home_logo_color_1"
 
+           android:textColor="@color/logo_splash_screen"
            />
 
        <androidx.appcompat.widget.AppCompatTextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_marginLeft="@dimen/_2sdp"
+           android:layout_marginLeft="1.5dip"
            android:text="reads"
            android:layout_gravity="center"
            android:textSize="@dimen/_30ssp"
-           android:layout_marginBottom="@dimen/_5sdp"
 
-           android:textColor="@color/home_logo_color_1"
+
+           android:textColor="@color/logo_splash_screen"
            android:textStyle="bold" />
 
    </androidx.appcompat.widget.LinearLayoutCompat>
