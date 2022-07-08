@@ -93,7 +93,7 @@ public class ViewRecommenderActivity extends AppCompatActivity {
         context = binding.getRoot().getContext();
 
         flowTextView = (FlowTextView) findViewById(R.id.ftv);
-        flowTextView.setTextColor(Color.WHITE);
+        flowTextView.setTextColor(getResources().getColor(R.color.recommender_bio_text_color_1));
         flowTextView.setTextDirection(View.TEXT_ALIGNMENT_VIEW_END);
         flowTextView.setTextSize(getResources().getDimension(R.dimen.text_size_14));
 

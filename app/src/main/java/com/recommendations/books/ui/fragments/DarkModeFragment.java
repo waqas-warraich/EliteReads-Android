@@ -19,7 +19,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.recommendations.books.R;
-import com.recommendations.books.databinding.FragmentDarkModeBinding;
+import com.recommendations.books.databinding.FragmentNightModeBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -41,7 +41,7 @@ public class DarkModeFragment extends Fragment {
 
     int checkedRadioId = 0;
     String themeMode;
-    FragmentDarkModeBinding binding;
+    FragmentNightModeBinding binding;
     RadioButton radioDarkMode, radioLightMode, radioSystemMode;
     RadioGroup radioGroup;
 
@@ -82,7 +82,7 @@ public class DarkModeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = com.recommendations.books.databinding.FragmentDarkModeBinding.inflate(inflater, container, false);
+        binding = com.recommendations.books.databinding.FragmentNightModeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         context = root.getContext();
        // varView = root;

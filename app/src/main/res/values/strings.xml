@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TopReads</string>
+    <string name="app_name">BookRec</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Explore</string>
     <string name="title_favorites">Favorites</string>
@@ -24,7 +24,7 @@
     <string name="description_should_not_empty">Description should not empty</string>
     <string name="send_your_suggestion">Send your suggestion</string>
     <string name="cancel">Cancel</string>
-    <string name="elitereads">TopReads</string>
+    <string name="elitereads">BookRec</string>
     <string name="app_version">Version: 1.0</string>
     <string name="audio_summary">Audio Summary</string>
     <string name="freebook_downloader">FreeBook Downloader</string>
@@ -44,14 +44,14 @@
     <string name="or_text">Or</string>
     <string name="continue_with_google_text">Continue with Google</string>
     <string name="terms_and_privacy_policy">Terms and Privacy Policy</string>
-    <string name="welcome_to_elitereads_text">Welcome to TopReads</string>
+    <string name="welcome_to_elitereads_text">Welcome to BookRec</string>
     <string name="sign_up_with_email_text">Sign Up with Email</string>
     <string name="already_have_an_account_text">Already have an account?</string>
     <string name="by_continuing_you_are_accept_our_terms_of_services_and_privacy_policy">By continuing, you are declaring that you accept our Terms of Services and Privacy Policy.</string>
     <string name="sign_up_with_email_title">Sign Up With Email</string>
     <string name="enter_valid_email_address">Enter Valid Email Address</string>
     <string name="valid_password_is_not_valid">Valid Password is not valid</string>
-    <string name="elitereads_splash_appName_text">TopReads</string>
+    <string name="elitereads_splash_appName_text">BookRec</string>
     <string name="video_summary_toolbar_title">Video Summary</string>
     <string name="most_recommended_recommended_books_toolbar_title">Most Recommended Books</string>
     <string name="all_recommenders_toolbar_title">All Recommenders</string>
@@ -73,7 +73,7 @@
     <string name="read_more_text">Read more</string>
     <string name="book_recommended_by_text">Book Recommended By</string>
     <string name="recommendation_quotes_text">Recommendation Quotes</string>
-    <string name="recommender_details_title">Elon Musk</string>
+    <string name="recommender_details_title">Recommender</string>
     <string name="recommender_bio_placeholder_text">Elon Reeve Musk FRS is an entrepreneur, investor, and business magnate. He is the founder, CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI is an entrepreneur, investor, and business magnate. He is the founder, CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI.</string>
     <string name="recommended_books_heading">Recommended Books</string>
     <string name="are_you_sure_you_want_to_log_out_dailog_title">Are you sure you want to Log Out?</string>
@@ -83,14 +83,14 @@
     <string name="close_filter_bottomsheet_button">Close</string>
     <string name="apply_filter_button_text">Apply</string>
     <string name="dark_mode_fragment_title_toolbar">Dark Mode</string>
-    <string name="dark_mode_title_choose_to_change_your_elitereads_theme">Choose to change your TopReads Theme</string>
+    <string name="dark_mode_title_choose_to_change_your_elitereads_theme">Choose to change your BookRec Theme</string>
     <string name="dark_mode_radio_text">Dark Mode</string>
     <string name="light_mode_radio_text">Light Mode</string>
     <string name="explore_fragment_title">Explore</string>
     <string name="please_log_in_to_access_favorites">Please Log In to access favorites</string>
     <string name="log_in_button_favorites_text">Log In</string>
     <string name="favorites_fragment_toolbar_title">Favorites</string>
-    <string name="elitereads_app_name">TopReads</string>
+    <string name="elitereads_app_name">BookRec</string>
     <string name="home_heading_recommended_books_by">Recommended Books By</string>
     <string name="home_heading_most_recommended_bitcoin_books">Most Recommended Bitcoin Books</string>
     <string name="view_all_home_fragment_text">View All</string>
@@ -98,15 +98,15 @@
     <string name="home_heading_most_recommended_biography_books">Most Recommended Biographies</string>
     <string name="most_home_heading_recommended_investment_books">Most Recommended Investment Books</string>
     <string name="rate_us_fragment_toolbar_title">Rate Us</string>
-    <string name="update_app_fragment_toolbar_title">TopReads Needs Update</string>
-    <string name="are_you_enjoying_elitereads_rate_us_text">Are you enjoying TopReads?</string>
+    <string name="update_app_fragment_toolbar_title">BookRec Needs Update</string>
+    <string name="are_you_enjoying_elitereads_rate_us_text">Are you enjoying BookRec?</string>
     <string name="high_five_rating_text">High Five!</string>
     <string name="we_are_sorry_rating_fragment_two">We are sorry...</string>
     <string name="please_help_use_know_rating_ragment_two_text">Please help use know how we can improve our app by contacting us.</string>
     <string name="give_your_suggestion_rating_fragment_two">Give your suggestion</string>
     <string name="download_update_text">DOWNLOAD</string>
 
-    <string name="update_message_update_dialog_text">This version of TopReads became obsolete now. Please go to Google Play store to download the latest version!</string>
+    <string name="update_message_update_dialog_text">This version of BookRec became obsolete now. Please go to Google Play store to download the latest version!</string>
 
     <string name="cancel_rating_fragment_two_text">Cancel</string>
     <string name="user_name_placeholder_settings_fragment">User</string>
@@ -122,7 +122,7 @@
     <string name="share_this_app_text_settings_fragment">Share this App</string>
     <string name="give_us_feedback_suggestions_text_settings_fragment">Give Us Feedback / Suggestions</string>
     <string name="terms_and_conditions_text__settings_fragment">Terms and Conditions</string>
-    <string name="about_elitereads_text_settings_fragment">About TopReads</string>
+    <string name="about_elitereads_text_settings_fragment">About BookRec</string>
     <string name="app_version_text_settings_fragment">App Version: 1.0</string>
     <string name="app_version_code">1.0</string>
     <string name="log_out_text_settings_fragment">Log out</string>
@@ -147,6 +147,6 @@
     <string name="search_again">Search Again</string>
     <string name="about_app_toolbar_title">About</string>
     <string name="open_source_licences_tv_text">Open source licences</string>
-    <string name="elitereads_project_resources_attributions_tv_text">TopReads resources attributions</string>
+    <string name="elitereads_project_resources_attributions_tv_text">BookRec resources attributions</string>
     <string name="custom_license_title">Open source credits and licenses</string>
 </resources>

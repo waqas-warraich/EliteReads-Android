@@ -32,15 +32,17 @@
             android:background="@android:color/transparent"
             android:clickable="true"
             android:focusable="true"
-            app:srcCompat="@drawable/ic_baseline_arrow_back"
-            app:tint="@color/toolbar_tint_color" />
+            android:tint="@color/toolbar_tint_color"
+            app:srcCompat="@drawable/ic_back_arrow"
+            />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:text="@string/rate_us_fragment_toolbar_title"
+            android:text="Rate Us"
             android:layout_gravity="center_horizontal"
+
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:textColor="@color/toolbar_text_color"
             android:textStyle="bold" />
@@ -49,27 +51,28 @@
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_rating_illustration"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_height="270dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_50sdp"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_favoritesppppppp_books"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@drawable/ic_customer_feedback_rafiki" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:text="@string/are_you_enjoying_elitereads_rate_us_text"
-        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_rating_illustration" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView2"
@@ -77,9 +80,13 @@
         android:layout_height="wrap_content"
         android:text="@string/high_five_rating_text"
         android:textSize="20sp"
-        android:layout_marginTop="@dimen/_90sdp"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_20sdp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -87,10 +94,11 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayout"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -101,13 +109,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_star_border_30"
-            app:tint="@color/toolbar_tint_color" />
+            app:tint="@color/colorPrimary" />
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/twoStars_RateUse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_star_border_30"
-            app:tint="@color/toolbar_tint_color"
+            app:tint="@color/colorPrimary"
             />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -116,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_star_border_30"
-            app:tint="@color/toolbar_tint_color"
+            app:tint="@color/colorPrimary"
             />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -125,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_star_border_30"
-            app:tint="@color/toolbar_tint_color"
+            app:tint="@color/colorPrimary"
             />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -134,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_star_border_30"
-            app:tint="@color/toolbar_tint_color"
+            app:tint="@color/colorPrimary"
             />
 
 
@@ -156,9 +164,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/toolbar_text_color"
+            android:textColor="@color/text_color_grey_version_name"
             android:text="@string/app_name"
-
             />
 
         <androidx.appcompat.widget.AppCompatTextView

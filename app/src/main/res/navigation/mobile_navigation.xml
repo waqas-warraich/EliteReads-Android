@@ -27,7 +27,7 @@
         android:id="@+id/navigation_settings"
         android:name="com.recommendations.books.ui.fragments.SettingsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_settings" >
+        tools:layout="@layout/fragment_accounts" >
 
         <action
             app:enterAnim="@anim/slide_in_from_right"
@@ -43,7 +43,7 @@
         android:id="@+id/fragmentDarkModeSettings"
         android:name="com.recommendations.books.ui.fragments.SettingsFragment"
         android:label="fragment_one"
-        tools:layout="@layout/fragment_dark_mode">
+        tools:layout="@layout/fragment_night_mode">
 
         <action
             android:id="@+id/action_fragmentDarkModeSettings_to_navigation_settings"

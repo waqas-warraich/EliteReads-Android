@@ -102,7 +102,7 @@ public class HomeFragment extends Fragment {
 
         // below line is used to get
         // reference for our database.
-        databaseReference = firebaseDatabase.getReference("EliteReadsVersion");
+        databaseReference = firebaseDatabase.getReference("BookRecVersion");
 
 
 

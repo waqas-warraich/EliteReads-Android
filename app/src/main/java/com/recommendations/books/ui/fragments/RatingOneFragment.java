@@ -9,13 +9,14 @@ import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.recommendations.books.R;
-import com.recommendations.books.databinding.FragmentRatingOneBinding;
+import com.recommendations.books.databinding.FragmentRateUsOneBinding;
 
 
 /**
@@ -25,10 +26,10 @@ import com.recommendations.books.databinding.FragmentRatingOneBinding;
  */
 public class RatingOneFragment extends Fragment {
 
-    FragmentRatingOneBinding binding;
+    FragmentRateUsOneBinding binding;
     Context context;
 
-
+    ImageView ivRatingIllustration;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -64,8 +65,10 @@ public class RatingOneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentRatingOneBinding.inflate(inflater, container, false);
+        binding = FragmentRateUsOneBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        ivRatingIllustration = binding.imageViewRatingIllustration;
 
         return root;
     }
@@ -130,11 +133,16 @@ public class RatingOneFragment extends Fragment {
                 binding.fiveStarsRateUse.setImageResource(R.drawable.ic_round_star_filled_40);
 
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.titanreads.topreads")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.recommendations.books")));
                 } catch (android.content.ActivityNotFoundException anfe) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.titanreads.topreads")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.recommendations.books")));
                 }
 
+
+                ivRatingIllustration.setImageResource(R.drawable.ic_super_thank_you);
+                binding.textView.setText("Thank you very much for your positive review!");
+                binding.textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                binding.textView2.setVisibility(View.INVISIBLE);
 
                /* Intent intent = new Intent(view.getContext(), AppUserFeedbackActivity.class);
                 view.getContext().startActivity(intent);*/

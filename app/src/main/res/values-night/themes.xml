@@ -1,17 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.EliteReads" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.BookRec" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/teal_200</item>
-        <item name="colorPrimaryVariant">#ff051e25</item>
+        <item name="colorPrimary">@color/logo_splash_screen</item>
+        <item name="colorPrimaryVariant">@color/primaryBackground2</item>
         <item name="colorOnPrimary">@color/teal_light</item>
-        <item name="backgroundColor">@color/primaryBackground</item>
-        <item name="colorPrimarySurface">@color/primaryBackground</item>
-        <item name="android:windowBackground">@color/primaryBackground</item>
+        <item name="backgroundColor">@color/primaryBackground2</item>
+        <item name="colorPrimarySurface">@color/primaryBackground2</item>
+        <item name="android:windowBackground">@color/primaryBackground2</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/background_color</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/hero_background</item>
+        <item name="colorOnSecondary">@color/primaryBackground2</item>
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColor">@color/grey_light</item>
         <item name="android:textColorSecondary">@color/grey_light</item>
@@ -24,7 +24,7 @@
 
 
 
-    <style name="Theme.EliteReads.NoActionBar">
+    <style name="Theme.BookRec.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

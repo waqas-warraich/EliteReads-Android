@@ -11,8 +11,8 @@
         android:id="@+id/toolbar_SignUpWithEmail"
         android:layout_width="fill_parent"
         android:layout_height="?actionBarSize"
-        android:elevation="@dimen/toolbar_elevation"
         android:background="@color/registration_toolbar_bg_color"
+        android:elevation="@dimen/toolbar_elevation"
         app:layout_collapseMode="pin"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 

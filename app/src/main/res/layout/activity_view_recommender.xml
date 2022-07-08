@@ -192,7 +192,8 @@
                     android:drawableStart="@drawable/ic_read_more_arrow_down_24"
                     android:focusable="true"
                     android:text="@string/read_more_text"
-                    android:textColor="@color/white">
+                    android:drawableTint="@color/toolbar_tint_color"
+                    android:textColor="@color/blue">
 
 
                 </androidx.appcompat.widget.AppCompatTextView>

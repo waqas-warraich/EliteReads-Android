@@ -159,6 +159,7 @@
                     android:layout_weight=".4"
                     style="@style/signup_button_style_with_border"
                     android:gravity="center"
+
                     android:layout_gravity="center_vertical"
                     android:orientation="horizontal"
                     android:clickable="true">
@@ -186,7 +187,7 @@
                     android:layout_weight=".6"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_gravity="center_vertical"
-                    android:background="@drawable/search_btn_bg"
+                    android:background="@drawable/login_btn_bg"
                     android:gravity="center"
                     android:padding="@dimen/_5sdp"
                     android:clickable="true"

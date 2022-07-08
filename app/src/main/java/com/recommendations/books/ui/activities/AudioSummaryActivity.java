@@ -141,7 +141,7 @@ public class AudioSummaryActivity extends AppCompatActivity  implements JcPlayer
             public void onClick(View view) {
                 Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Listen summary or the key takeaways of "+bookName+" by "+authorName+ " for free on EliteReads : "+"https://play.google.com/store/apps/details?id=com.titanreads.topreads");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Listen summary or the key takeaways of "+bookName+" by "+authorName+ " for free on BookRec : "+"https://play.google.com/store/apps/details?id=com.titanreads.topreads");
 
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }

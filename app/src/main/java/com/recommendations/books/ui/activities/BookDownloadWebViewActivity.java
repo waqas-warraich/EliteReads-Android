@@ -115,7 +115,7 @@ public class BookDownloadWebViewActivity extends AppCompatActivity {
                 Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT,"Want to know book recommendation from  " +
-                        "Download TopReads App from PlayStore : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
+                        "Download BookRec App from PlayStore : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
                 // shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, tutorProfile.getTutorName()+" on PakTutors");
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }

@@ -181,7 +181,7 @@ public class SignUpWithEmailActivity extends AppCompatActivity{
         });
 
 
-        String text = "By pressing 'SUBMIT' I declare that i have read all and I agree to the PakTutors Terms and Conditions.";
+        String text = "By pressing 'SUBMIT' I declare that i have read all and I agree to the BookRec Terms and Conditions.";
 
         SpannableString ss = new SpannableString(text);
 
@@ -194,14 +194,14 @@ public class SignUpWithEmailActivity extends AppCompatActivity{
             @Override
             public void updateDrawState(TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setColor(getResources().getColor(R.color.teal_logo));
+                ds.setColor(getResources().getColor(R.color.colorPrimary));
                 ds.setTextSize(35);
                 ds.setUnderlineText(false);
             }
         };
 
 
-        ss.setSpan(clickableSpan1, 81, 101, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan1, 79, 100, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         tvTermsNPrivacy.setText(ss);
         tvTermsNPrivacy.setMovementMethod(LinkMovementMethod.getInstance());

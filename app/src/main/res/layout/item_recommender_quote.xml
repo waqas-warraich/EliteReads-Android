@@ -29,7 +29,7 @@
 
     <ImageView android:layout_width="32.0dip" android:layout_height="48.0dip" android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/quoteContainer" app:layout_constraintRight_toLeftOf="@id/quoteContainer" app:srcCompat="@drawable/ic_bubble_curve_quote"
-        app:tint="@color/black_shade" />
+        app:tint="@color/recommender_quote_bg_color" />
     <RelativeLayout android:layout_marginEnd="@dimen/_2sdp" android:id="@+id/quoteContainer" android:background="@drawable/bg_rounded_quote" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/recommender_iv_quote_item" app:layout_constraintRight_toRightOf="parent">
 
         <androidx.appcompat.widget.AppCompatTextView

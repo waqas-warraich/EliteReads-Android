@@ -36,7 +36,7 @@ public class RecommenderQuickFiltersAdapter extends RecyclerView.Adapter<Recomme
 
 
 
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_all_recommenders_filter, parent, false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_filter_recommenders, parent, false);
         return new RecommenderFiltersVH(v, onFiltersItemClickListener);
 
     }

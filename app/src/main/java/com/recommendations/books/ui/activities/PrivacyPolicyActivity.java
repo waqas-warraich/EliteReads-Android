@@ -36,7 +36,7 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_privacy_policy);
         webView = (WebView) findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://paktutors-app.github.io/privacy.html");
+        webView.loadUrl("https://titanreads.github.io/bookrec-privacy.html");
 
         /*WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);*/

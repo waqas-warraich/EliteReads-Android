@@ -11,9 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.recommendations.books.R;
-import com.recommendations.books.databinding.FragmentRatingOneBinding;
-import com.recommendations.books.databinding.FragmentRatingTwoBinding;
+import com.recommendations.books.databinding.FragmentRateUsTwoBinding;
+
+
 import com.recommendations.books.ui.activities.AppUserFeedbackActivity;
 
 /**
@@ -23,7 +23,7 @@ import com.recommendations.books.ui.activities.AppUserFeedbackActivity;
  */
 public class RatingTwoFragment extends Fragment {
 
-    FragmentRatingTwoBinding binding;
+    FragmentRateUsTwoBinding binding;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -61,7 +61,7 @@ public class RatingTwoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentRatingTwoBinding.inflate(inflater, container, false);
+        binding = FragmentRateUsTwoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;

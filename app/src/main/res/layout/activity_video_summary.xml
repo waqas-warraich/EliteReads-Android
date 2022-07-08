@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#051E25"
+
     tools:context=".ui.activities.VideoSummaryActivity">
 
 
@@ -68,8 +68,8 @@
             android:background="@android:color/transparent"
             android:clickable="true"
             android:focusable="true"
-
             android:src="@drawable/ic_copy_link_24"
+            android:visibility="gone"
             app:tint="@color/toolbar_tint_color" />
 
 

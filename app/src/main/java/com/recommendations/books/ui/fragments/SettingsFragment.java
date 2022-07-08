@@ -33,6 +33,7 @@ import androidx.navigation.Navigation;
 import com.bumptech.glide.Glide;
 import com.recommendations.books.MainActivity;
 import com.recommendations.books.R;
+import com.recommendations.books.databinding.FragmentAccountsBinding;
 import com.recommendations.books.models.User;
 import com.recommendations.books.ui.activities.AboutAppActivity;
 import com.recommendations.books.ui.activities.AppRatingActivity;
@@ -99,7 +100,7 @@ public class SettingsFragment extends Fragment {
     FirebaseUser currentUser;
     LinearLayoutCompat llProgressBarContainer;
 
-    private com.recommendations.books.databinding.FragmentSettingsBinding binding;
+    private FragmentAccountsBinding binding;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -117,7 +118,7 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = com.recommendations.books.databinding.FragmentSettingsBinding.inflate(inflater, container, false);
+        binding = com.recommendations.books.databinding.FragmentAccountsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         context = root.getContext();
         varView = root;
@@ -293,7 +294,7 @@ public class SettingsFragment extends Fragment {
                         alertDialog.dismiss();
                         llProgressBarContainer.setVisibility(View.VISIBLE);
 
-                        DocumentReference documentReference = db.collection("EliteReadsAndroidUserAccounts").document(userAccountId);
+                        DocumentReference documentReference = db.collection("BookRecAndroidUserAccounts").document(userAccountId);
 
                         documentReference.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override

@@ -7,8 +7,6 @@
     tools:context=".ui.activities.ViewBookDetailsActivity"
     >
 
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -383,7 +381,7 @@
                         android:visibility="visible" />
 
 
-                    <androidx.cardview.widget.CardView
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:id="@+id/bookActionsContainer"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_40sdp"
@@ -391,89 +389,84 @@
                         android:layout_marginStart="@dimen/_20sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_20sdp"
-                        app:cardBackgroundColor="@color/logo_splash_screen"
-                        app:cardCornerRadius="@dimen/_10sdp"
-                        app:cardElevation="@dimen/_2sdp">
+                        android:background="@drawable/shape_gradient_round"
+                        android:elevation="@dimen/_5sdp"
 
-                        <androidx.appcompat.widget.LinearLayoutCompat
-                            android:layout_width="match_parent"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_read_bookSummary"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:layout_marginEnd="@dimen/_10sdp">
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_weight="4"
+                            android:drawableStart="@drawable/ic_read_summary"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableTint="@color/book_summary_buttons_bg_tint_color"
+                            android:gravity="center"
+                            android:tag="binding_4"
+                            android:text="@string/read_summary_button_placehoder_text"
+                            android:textColor="@color/book_summary_buttons_text_color"
 
-                            <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/tv_read_bookSummary"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="4"
-                                android:drawableStart="@drawable/ic_read_summary"
-                                android:drawablePadding="@dimen/_10sdp"
-                                android:gravity="center"
-                                android:tag="binding_4"
-                                android:text="@string/read_summary_button_placehoder_text"
-                                android:textColor="@color/book_summary_buttons_text_color"
-                                android:drawableTint="@color/book_summary_buttons_bg_tint_color"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                            app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
 
-                                android:visibility="visible"
-                                app:layout_constraintStart_toStartOf="@id/guidelineStart"
-                                app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
+                        <View
+                            android:layout_width="2.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:background="@color/book_summary_buttons_text_color" />
 
-                            <View
-                                android:layout_width="2.0dip"
-                                android:layout_height="fill_parent"
-                                android:layout_marginStart="@dimen/_20sdp"
-                                android:layout_marginEnd="@dimen/_20sdp"
-                                android:background="@color/book_summary_buttons_text_color" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_listen_bookSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:drawableStart="@drawable/ic_headset_24"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableTint="@color/book_summary_buttons_bg_tint_color"
+                            android:tag="binding_4"
 
-                            <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/tv_listen_bookSummary"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="4"
-                                android:drawableStart="@drawable/ic_headset_24"
-                                android:drawablePadding="@dimen/_10sdp"
-                                android:tag="binding_4"
-                                android:text="@string/lister_summary_button_placehoder_text"
+                            android:text="@string/lister_summary_button_placehoder_text"
+                            android:textColor="@color/book_summary_buttons_text_color"
+                            android:visibility="visible"
 
-                                android:visibility="visible"
-                                android:textColor="@color/book_summary_buttons_text_color"
-                                android:drawableTint="@color/book_summary_buttons_bg_tint_color"
+                            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                            app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
 
-                                app:layout_constraintStart_toStartOf="@id/guidelineStart"
-                                app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
+                        <View
+                            android:layout_width="2.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginStart="@dimen/_20sdp"
 
-                            <View
-                                android:layout_width="2.0dip"
-                                android:layout_height="fill_parent"
-                                android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:background="@color/book_summary_buttons_text_color" />
 
-                                android:layout_marginEnd="@dimen/_20sdp"
-                                android:background="@color/book_summary_buttons_text_color" />
-
-                            <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/tv_watch_bookSummary"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="4"
-                                android:drawableStart="@drawable/ic_outline_video_play_24"
-                                android:drawablePadding="@dimen/_10sdp"
-                                android:tag="binding_4"
-                                android:text="@string/watch_summary_button_placehoder_text"
-                                android:textColor="@color/book_summary_buttons_text_color"
-                                android:drawableTint="@color/book_summary_buttons_bg_tint_color"
-                                android:visibility="visible"
-                                app:layout_constraintStart_toStartOf="@id/guidelineStart"
-                                app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_watch_bookSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:drawableStart="@drawable/ic_outline_video_play_24"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableTint="@color/book_summary_buttons_bg_tint_color"
+                            android:tag="binding_4"
+                            android:text="@string/watch_summary_button_placehoder_text"
+                            android:textColor="@color/book_summary_buttons_text_color"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                            app:layout_constraintTop_toBottomOf="@id/llImageContainerAccounts" />
 
 
-                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-                    </androidx.cardview.widget.CardView>
+
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat

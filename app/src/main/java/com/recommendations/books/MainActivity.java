@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     // creating a variable for our
     // Database Reference for Firebase.
-    DatabaseReference databaseReference;
+    DatabaseReference appVersionDbRef,appApprovalStatusDbRef;
     View snackBarView;
 
 
@@ -73,13 +73,18 @@ public class MainActivity extends AppCompatActivity {
         /*binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());*/
 
+       /* getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
+        android.graphics.drawable.Drawable background = MainActivity.this.getResources().getDrawable(R.drawable.shape_main_gradient);
+        getWindow().setBackgroundDrawable(background);*/
 
         varView = findViewById(android.R.id.content).getRootView();
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         // below line is used to get
         // reference for our database.
-        databaseReference = firebaseDatabase.getReference("EliteReadsVersion");
+        appVersionDbRef = firebaseDatabase.getReference("BookRecVersion");
+        appApprovalStatusDbRef = firebaseDatabase.getReference("AppApprovalStatus");
 
         buildUpdateAlert();
         getData();
@@ -124,16 +129,13 @@ public class MainActivity extends AppCompatActivity {
 
         // calling add value event listener method
         // for getting the values from database.
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        appVersionDbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 appVersionCode = snapshot.getValue(String.class);
 
-                if(getResources().getString(R.string.app_version_code).equals(appVersionCode)){
-
-                }else{
-
+                if(!appVersionCode.contains(getResources().getString(R.string.app_version_code)) &&(appVersionCode.contains("approved"))){
                     new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -141,6 +143,10 @@ public class MainActivity extends AppCompatActivity {
                             alertDialog.show();
                         }
                     }, 2000);
+
+                }else{
+
+
 
 
                 }
@@ -190,10 +196,10 @@ public class MainActivity extends AppCompatActivity {
 
                 //final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.titanreads.topreads")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.recommendations.books")));
                     dismiss(alertDialog);
                 } catch (android.content.ActivityNotFoundException anfe) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.titanreads.topreads")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.recommendations.books")));
                 }
 
 

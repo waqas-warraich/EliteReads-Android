@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     >
 
 
@@ -34,15 +35,14 @@
                 android:layout_width="@dimen/_40sdp"
                 android:layout_gravity="center"
                 android:layout_height="35dip"
-                app:tint="@color/colorPrimary"
-                android:src="@drawable/ic_elitereads_icon_logo_color_transparent_bg_no_margin_v2"
+                app:srcCompat="@drawable/ic_bookrec_icon_logo_color_transparent_bg_no_margin_v2"
                 />
 
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="elite"
+                android:text="Book"
 
 
                 android:layout_gravity="center"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="1.5dip"
-                android:text="reads"
+                android:text="Rec"
                 android:layout_gravity="center"
                 android:textSize="20.0sp"
                 android:textColor="@color/logo_splash_screen"
@@ -64,6 +64,17 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@drawable/home_mountains_sidebar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main_home_tab"
+        android:layout_height="@dimen/_70sdp"/>
 
 
 
@@ -124,7 +135,7 @@
                             android:gravity="end"
                             android:textAlignment="textEnd"
                             android:text="@string/view_all_home_fragment_text"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/home_view_all_label"
                             android:visibility="visible" />
 
 
@@ -171,7 +182,7 @@
 
                             android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
                             android:text="@string/view_all_home_fragment_text"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/home_view_all_label"
                             android:visibility="visible" />
 
 
@@ -222,7 +233,7 @@
 
                             android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
                             android:text="@string/view_all_home_fragment_text"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/home_view_all_label"
                             android:visibility="visible" />
 
 
@@ -270,7 +281,7 @@
                             android:drawableTint="@color/toolbar_tint_color"
 
                             android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/home_view_all_label"
                             android:visibility="visible" />
 
 
@@ -318,7 +329,7 @@
                             android:drawablePadding="@dimen/_5sdp"
                             android:drawableTint="@color/toolbar_tint_color"
                             android:drawableEnd="@drawable/ic_baseline_arrow_forward_14"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/home_view_all_label"
                             android:visibility="visible" />
 
 

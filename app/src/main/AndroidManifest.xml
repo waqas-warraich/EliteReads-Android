@@ -13,65 +13,58 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_elitereads"
+        android:icon="@mipmap/ic_bookrec"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_elitereads_round"
+        android:roundIcon="@mipmap/ic_bookrec_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EliteReads">
+        android:theme="@style/Theme.BookRec">
         <activity
-            android:name="com.recommendations.books.ui.activities.ExploredRecommendersActivity"
+            android:name=".ui.activities.AttributionActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ExploredBooksActivity"
+            android:name=".ui.activities.ExploredRecommendersActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.AppUserFeedbackActivity"
+            android:name=".ui.activities.ExploredBooksActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.AppRatingActivity"
+            android:name=".ui.activities.AppUserFeedbackActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.LoginActivity"
+            android:name=".ui.activities.AppRatingActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ForgetPasswordActivity"
+            android:name=".ui.activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.PrivacyPolicyActivity"
+            android:name=".ui.activities.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.AudioSummaryActivity"
+            android:name=".ui.activities.PrivacyPolicyActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ViewAllRecommendersActivity"
-            android:exported="false"
-            />
-        <activity
-            android:name="com.recommendations.books.ui.activities.ViewBookDetailsActivity"
+            android:name=".ui.activities.AudioSummaryActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.BookDownloadWebViewActivity"
+            android:name=".ui.activities.ViewAllRecommendersActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.BookTextSummaryActivity"
+            android:name=".ui.activities.ViewBookDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ViewRecommenderActivity"
+            android:name=".ui.activities.BookDownloadWebViewActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.VideoSummaryActivity"
+            android:name=".ui.activities.BookTextSummaryActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ViewAllInvestmentBooksActivity"
+            android:name=".ui.activities.ViewRecommenderActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ViewAllBiographyBooksActivity"
+            android:name=".ui.activities.VideoSummaryActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.ViewAllTechBooksActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.recommendations.books.ui.activities.ViewAllMostRecommendedBooksActivity"
+            android:name=".ui.activities.ViewAllMostRecommendedBooksActivity"
             android:exported="false" />
 
         <meta-data
@@ -79,22 +72,19 @@
             android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <activity
-            android:name="com.recommendations.books.ui.activities.AdvertisementActivity"
+            android:name=".ui.activities.AboutAppActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.AboutAppActivity"
+            android:name=".ui.activities.SignUpWithEmailActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.SignUpWithEmailActivity"
+            android:name=".ui.activities.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.ui.activities.SignUpActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.recommendations.books.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.recommendations.books.ui.activities.SplashscreenActivity"
+            android:name=".ui.activities.SplashscreenActivity"
             android:alwaysRetainTaskState="true"
             android:configChanges="uiMode"
             android:exported="true"

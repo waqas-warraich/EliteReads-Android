@@ -119,7 +119,7 @@ public class FavoriteRecommendersAdapter extends FirestoreRecyclerAdapter<BookRe
                 Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT,model.getName());
-                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Find all recommended books by "+model.getName()+" and learn or review the key takeaways for free on EliteReads: https://play.google.com/store/apps/details?id=com.titanreads.topreads");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Find all recommended books by "+model.getName()+" and learn or review the key takeaways for free on BookRec: https://play.google.com/store/apps/details?id=com.titanreads.topreads");
                 context.startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });

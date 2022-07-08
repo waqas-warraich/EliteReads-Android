@@ -42,8 +42,8 @@ public class AboutAppActivity extends AppCompatActivity {
         tvFreeGraphicsAttributionsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intent = new Intent(AboutAppActivity.this, AttributionActivity.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(AboutAppActivity.this, AttributionActivity.class);
+                startActivity(intent);
             }
         });
 

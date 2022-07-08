@@ -15,6 +15,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.recommendations.books.R;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
@@ -27,11 +30,12 @@ public class VideoSummaryActivity extends YouTubeBaseActivity {
 
     YouTubePlayerView ytPlayer;
 
-    private ImageButton ibShare, ibCopy;
+    private ImageButton ibShare, ibCopy, ibBack;
     Context context;
 
     String videoID;
 
+    String ApiKey;
     String bookName = "", authorName="";
 
     String summaryUrl;
@@ -39,7 +43,7 @@ public class VideoSummaryActivity extends YouTubeBaseActivity {
     boolean isConnected = true;
     private boolean monitoringConnectivity = false;
     View varView;
-
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
 
 
@@ -66,35 +70,49 @@ public class VideoSummaryActivity extends YouTubeBaseActivity {
 
         summaryUrl = "http://www.youtube.com/embed/" + videoID + "?autoplay=1&vq=small";
 
-        ytPlayer.initialize(
-                "AIzaSyBrJIzEI6C2sxdE95wGK4XnYG25sP_pH_k",
-                new YouTubePlayer.OnInitializedListener() {
-                    // Implement two methods by clicking on red
-                    // error bulb inside onInitializationSuccess
-                    // method add the video link or the playlist
-                    // link that you want to play In here we
-                    // also handle the play and pause
-                    // functionality
+        db.collection("ApiKeys")
+                .document("GCP Api Keys")
+                .get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
-                    public void onInitializationSuccess(
-                            YouTubePlayer.Provider provider,
-                            YouTubePlayer youTubePlayer, boolean b)
-                    {
-                        youTubePlayer.loadVideo(videoID);
-                        youTubePlayer.play();
-                    }
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                       // Log.d(TAG, "google_places_api_key: " + documentSnapshot.get("google_places_api_key") + "");
+                        ApiKey = documentSnapshot.getString("YTPlayerKey");
 
-                    // Inside onInitializationFailure
-                    // implement the failure functionality
-                    // Here we will show toast
-                    @Override
-                    public void onInitializationFailure(YouTubePlayer.Provider provider,
-                                                        YouTubeInitializationResult
-                                                                youTubeInitializationResult)
-                    {
-                        Toast.makeText(getApplicationContext(), "Video player Failed", Toast.LENGTH_SHORT).show();
+
+                        ytPlayer.initialize(
+                                ApiKey,
+                                new YouTubePlayer.OnInitializedListener() {
+                                    // Implement two methods by clicking on red
+                                    // error bulb inside onInitializationSuccess
+                                    // method add the video link or the playlist
+                                    // link that you want to play In here we
+                                    // also handle the play and pause
+                                    // functionality
+                                    @Override
+                                    public void onInitializationSuccess(
+                                            YouTubePlayer.Provider provider,
+                                            YouTubePlayer youTubePlayer, boolean b)
+                                    {
+                                        youTubePlayer.loadVideo(videoID);
+                                        youTubePlayer.play();
+                                    }
+
+                                    // Inside onInitializationFailure
+                                    // implement the failure functionality
+                                    // Here we will show toast
+                                    @Override
+                                    public void onInitializationFailure(YouTubePlayer.Provider provider,
+                                                                        YouTubeInitializationResult
+                                                                                youTubeInitializationResult)
+                                    {
+                                        Toast.makeText(getApplicationContext(), "Video player Failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+
                     }
                 });
+
 
 
 
@@ -105,6 +123,14 @@ public class VideoSummaryActivity extends YouTubeBaseActivity {
 
         ibShare = findViewById(R.id.ib_share_videoSummaryActivity);
         ibCopy = findViewById(R.id.ib_copy_videoSummaryActivity);
+        ibBack = findViewById(R.id.ib_back_videoSummaryActivity);
+
+        ibBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         ibCopy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +149,7 @@ public class VideoSummaryActivity extends YouTubeBaseActivity {
 
                 Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Learn or review the key takeaways of "+bookName+" by "+authorName+ " for free on EliteReads : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Learn or review the key takeaways of "+bookName+" by "+authorName+ " for free on BookRec : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });

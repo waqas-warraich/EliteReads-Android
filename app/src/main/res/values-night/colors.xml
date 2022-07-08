@@ -16,13 +16,17 @@
   <color name="colorSecondaryVariant">@color/teal_logo</color>
 
   <color name="text_color_grey_version_name">@color/grey_40</color>
+  <color name="rating_fragment_primary">@color/grey_light</color>
+  <color name="text_color_app_name_rating">@color/grey_40</color>
+  <color name="home_view_all_label">@color/colorPrimary</color>
 
-  <color name="default_pressed">@color/teal_dark</color>
+  <color name="default_pressed">@color/orange_losos_15_opacity</color>
 
   <color name="otherPrimary">@color/teal_light</color>
 
   <color name="emailLoginColor">#EA4335</color>
   <color name="emailLoginColorPressed">#BB001B</color>
+
 
   <color name="primaryTextColor">@color/white</color>
   <color name="text_color_small_heading">@color/grey_lighter</color>
@@ -30,18 +34,20 @@
   <color name="home_logo_color_2">@color/teal_light</color>
   <color name="home_rv_text_color_small_heading">@color/white</color>
 
+  <color name="primaryBackground2">#ff282828</color>
   <color name="primaryBackground">#ff051e25</color>
   <color name="secondaryBackground">@color/c9</color>
 
   <!--<color name="login_bg_button_color_1">#261e7b85</color>-->
-  <color name="login_bg_button_color_1">@color/teal_light</color>
-  <color name="login_bg_button_color_2">@color/teal_regular</color>
+  <color name="login_bg_button_color_1">@color/colorPrimary</color>
+  <color name="login_bg_button_color_2">@color/colorPrimary</color>
 
-  <color name="toolbar_background_color">@color/primaryBackground</color>
+  <color name="toolbar_background_color">@color/primaryBackground2</color>
   <color name="toolbar_text_color">@color/white</color>
   <color name="toolbar_tint_color">@color/grey_light</color>
 
   <color name="recommender_bio_text_color_1">@color/white</color>
+  <color name="recommender_bio_tint_color">@color/white</color>
   <color name="recommender_bio_bg_color_1">#261e7b85</color>
   <color name="recommender_item_text_color_1">#FFFFFFFF</color>
   <color name="recommender_item_text_color_2">@color/border_color_28</color>
@@ -56,11 +62,11 @@
   <color name="recommended_books_color_3">@color/white</color>
   <color name="recommended_books_color_4">@color/white</color>
 
-  <color name="snackBarTint">@color/black_shade</color>
+  <color name="snackBarTint">@color/book_book_cover_bg_color</color>
 
 
   <color name="audioPlayer_bg_color_1">#ff051e25</color>
-  <color name="audioPlayer_progress_color">@color/teal_light</color>
+  <color name="audioPlayer_progress_color">@color/colorPrimary</color>
   <color name="jcPlayer_next_previous_icon_color">#261e7b85</color>
 
   <color name="dialog_logout_background_color">@color/hero_background</color>
@@ -76,7 +82,7 @@
   <color name="registration_toolbar_text_color">@color/black_shade</color>
   <color name="registration_toolbar_tint_color">@color/black_shade</color>
   <color name="registration_layout_bg_color">@color/white</color>
-  <color name="registration_link_text_text_color">@color/teal_logo</color>
+  <color name="registration_link_text_text_color">@color/colorPrimary</color>
 
 
 
@@ -87,13 +93,13 @@
   <color name="book_details_info_value_color">@color/white</color>
   <color name="book_description_bg_color">@color/teal_regular_15_opacity</color>
   <color name="book_description_text_color">@color/grey_light</color>
-  <color name="book_summary_buttons_bg_color">@color/teal_logo</color>
+  <color name="book_summary_buttons_bg_color">@color/colorPrimary</color>
   <color name="book_summary_buttons_text_color">@color/white</color>
   <color name="book_summary_buttons_bg_tint_color">@color/white</color>
   <color name="book_dd_button_bg_color">@color/light_green</color>
   <color name="book_dd_button_text_color">@color/white</color>
   <color name="book_dd_button_tint_color">@color/white</color>
-  <color name="recommender_quote_bg_color">@color/black_shade</color>
+  <color name="recommender_quote_bg_color">@color/book_details_book_info_bg_color</color>
   <color name="recommender_quote_text_color">@color/grey_light</color>
   <color name="recommender_quote_author_color">@color/amber</color>
   <color name="recommender_quote_sourceLink_color">@color/blue</color>
@@ -114,9 +120,9 @@
 
   <color name="settings_heading_label_text_color">@color/grey_light</color>
 
-  <color name="signUp_outline_btn_bg_color_1">#ff051e25</color>
+  <color name="signUp_outline_btn_bg_color_1">@color/primaryBackground2</color>
   <color name="signUp_outline_btn_border">@color/grey_lighter</color>
-  <color name="signUp_outline_btn_text_color">@color/grey_lighter</color>
+  <color name="signUp_outline_btn_text_color">@color/colorPrimary</color>
   <color name="signUp_outline_btn_border_text_bg_color">@color/teal_light</color>
 
   <color name="text_color_1">#ffc9c9c9</color>
@@ -155,7 +161,7 @@
   <color name="bg_fav_color">@color/grey_light</color>
 
 
-  <color name="black_shade">#ff494949</color>
+  <color name="black_shade">#494949</color>
   <color name="colorPrimaryNew">#ff494949</color>
 
 
@@ -231,7 +237,7 @@
   <color name="orange_persimmon">@color/orange_pinkish</color>
   <color name="orange_pinkish">#ffff7358</color>
 
-  <color name="active_button">@color/orange_losos_darker</color>
+  <color name="active_button">@color/violet_bright</color>
   <color name="author_info_books_count">@color/orange_losos_darker</color>
   <color name="splash_gradient_center_color">#ffdf2b73</color>
   <color name="splash_gradient_start_color">#fffe775f</color>
@@ -240,8 +246,10 @@
 
   <color name="logo_splash_screen">#fff54a66</color>
   <color name="logo_splash_screen_dark">#F30D46</color>
-  <color name="main_button_purple_dark">#ff920abc</color>
+  <color name="orange_losos_15_opacity">#26f86572</color>
 
+  <color name="violet_bright">#ff920abc</color>
+  <color name="violet_dark">#ff541162</color>
 
 
 </resources>

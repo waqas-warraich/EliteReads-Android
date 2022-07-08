@@ -128,7 +128,7 @@ public class BookTextSummaryActivity extends AppCompatActivity {
 
                                 textZoom = textZoom+10;
                                 webSettings.setTextZoom(textZoom);
-                                webView.loadUrl("https://www.hustleescape.com/book-summary-the-5am-club-by-robin-sharma/");
+                                webView.loadUrl(summaryUrl);
                                 return true;
                             }
 
@@ -181,7 +181,7 @@ public class BookTextSummaryActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Read summary or the key takeaways of "+bookName+" by "+bookAuthor+ " for free on EliteReads : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Read summary or the key takeaways of "+bookName+" by "+bookAuthor+ " for free on BookRec : https://play.google.com/store/apps/details?id=com.titanreads.topreads");
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });

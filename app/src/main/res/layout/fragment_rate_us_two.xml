@@ -54,9 +54,9 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_favori99tesppppppp_books"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@drawable/ic_baseline_mood_bad_24" />
 
 
 
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout33"
@@ -123,7 +123,7 @@
             android:paddingStart="@dimen/_15sdp"
             android:paddingEnd="@dimen/_15sdp"
             android:textSize="15sp"
-            style="@style/DayNightButton"
+            style="@style/registerFlowButtons"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:textColor="@color/toolbar_text_color"
+            android:textColor="@color/text_color_app_name_rating"
 
             />
 

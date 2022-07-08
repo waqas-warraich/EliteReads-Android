@@ -139,7 +139,7 @@ public class AppUserFeedbackActivity extends AppCompatActivity {
             userFeedBackModel = new UserFeedBack();
 
             CollectionReference collectionReference = FirebaseFirestore.getInstance()
-                    .collection("EliteReadsAndroidAppFeedback");
+                    .collection("BookRecAndroidAppFeedback");
             String id = collectionReference.document().getId();
 
             if(userEmail!=null)

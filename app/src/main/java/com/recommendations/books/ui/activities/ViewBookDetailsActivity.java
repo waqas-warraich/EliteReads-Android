@@ -60,6 +60,7 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
     private boolean monitoringConnectivity = false;
     View varView;
 
+
     private CardView cvBuyOnAmazon;
     private TextView tvBookName, tvBookAuthorName, tvBookReleasedDate, tvBookDescription, tvWatchVideoSummary;
     private TextView tvBookGenre;
@@ -77,6 +78,7 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
     Book book;
     Context context;
 
+    CardView cvBookSummaryActionButtons;
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
 
@@ -92,6 +94,7 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_view_book_details);
         context = ViewBookDetailsActivity.this;
+
 
 
         Bundle extra = getIntent().getExtras();
@@ -222,15 +225,16 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(book.getBookSummaryArticleUrl()!=null){
+                if(book.getBookSummaryArticleUrl()!=null && (!book.getBookSummaryArticleUrl().isEmpty())){
                     Intent intent = new Intent(context, BookTextSummaryActivity.class);
+
                     intent.putExtra("summaryUrl", book.getBookSummaryArticleUrl());
 
-                    if(book.getBookAuthor()!=null)
-                        intent.putExtra("authorName", book.getBookSummaryVideoUrl());
+                  /*  if(book.getBookAuthor()!=null)
+                        intent.putExtra("authorName", name());*/
 
                     if(book.getBookName()!=null)
-                        intent.putExtra("bookName", book.getBookSummaryVideoUrl());
+                        intent.putExtra("bookName", book.getBookName());
 
                     startActivity(intent);
                 }else{
@@ -247,7 +251,8 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(book.getBookSummaryAudioUrl()!=null){
+                String s= null;
+                if(book.getBookSummaryAudioUrl()!=null&& (!book.getBookSummaryAudioUrl().isEmpty())){
                     Intent intent = new Intent(context, AudioSummaryActivity.class);
                     if(book.getBookImageUrl()!=null)
                         intent.putExtra("bookImageUrl", book.getBookImageUrl());
@@ -279,21 +284,17 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(book.getBookSummaryVideoUrl()!=null){
+                if(book.getBookSummaryVideoUrl()!=null && !book.getBookSummaryVideoUrl().isEmpty()){
                     Intent intent = new Intent(context, VideoSummaryActivity.class);
 
                     if(book.getBookAuthor()!=null)
-                        intent.putExtra("authorName", book.getBookSummaryVideoUrl());
+                        intent.putExtra("authorName", book.getBookAuthor());
 
                     if(book.getBookName()!=null)
-                        intent.putExtra("bookName", book.getBookSummaryVideoUrl());
+                        intent.putExtra("bookName", book.getBookName());
 
                     if(book.getBookSummaryVideoUrl()!=null)
                         intent.putExtra("videoId", book.getBookSummaryVideoUrl());
-
-
-
-
                     startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), "Sorry! Video Summary not Available", Toast.LENGTH_SHORT).show();
@@ -531,30 +532,32 @@ public class ViewBookDetailsActivity extends AppCompatActivity {
 
     private void setBookRecommenderRecyclerView(){
 
-        Query query=null;
+        if(book.getBookId()!=null){
+            Query query=null;
 
 
-        query = FirebaseFirestore.getInstance()
-                .collection("AllRecommendedBooks").document(book.getBookId().trim()).collection("BookRecommenders").limit(10);
+            query = FirebaseFirestore.getInstance()
+                    .collection("AllRecommendedBooks").document(book.getBookId().trim()).collection("BookRecommenders").limit(10);
 
-        recommendationPersonRecyclerView= findViewById(R.id.recommender_recyclerView_bookView);
-        recommendationPersonRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
-                false));
-        recommendationPersonRecyclerView.setHasFixedSize(true);
-        recommendationPersonRecyclerView.setItemAnimator(null);
+            recommendationPersonRecyclerView= findViewById(R.id.recommender_recyclerView_bookView);
+            recommendationPersonRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
+                    false));
+            recommendationPersonRecyclerView.setHasFixedSize(true);
+            recommendationPersonRecyclerView.setItemAnimator(null);
 
-        FirestoreRecyclerOptions<BookRecommenderPerson> options = new FirestoreRecyclerOptions.Builder<BookRecommenderPerson>()
-                .setQuery(query, BookRecommenderPerson.class)
-                .build();
+            FirestoreRecyclerOptions<BookRecommenderPerson> options = new FirestoreRecyclerOptions.Builder<BookRecommenderPerson>()
+                    .setQuery(query, BookRecommenderPerson.class)
+                    .build();
 
-        recommendationPersonAdapter = new RecommendationPersonAdapter(options, false);
-        recommendationPersonRecyclerView.setAdapter(recommendationPersonAdapter);
+            recommendationPersonAdapter = new RecommendationPersonAdapter(options, false);
+            recommendationPersonRecyclerView.setAdapter(recommendationPersonAdapter);
 
-        recommendationPersonAdapter.setStateRestorationPolicy(RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY);
+            recommendationPersonAdapter.setStateRestorationPolicy(RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY);
 
-        if(recommendationPersonAdapter!=null)
-            recommendationPersonAdapter.startListening();
+            if(recommendationPersonAdapter!=null)
+                recommendationPersonAdapter.startListening();
 
+        }
 
     }
 
