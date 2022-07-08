@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="121.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="121.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/ic_mountain_with_gradient__0" android:pathData="M0,0L0,120 40,76 80,88 112,51 152,60 192,28 232,37 280,4 280,0z" android:fillType="evenOdd" />
+    <path android:fillColor="#59ffffff" android:pathData="M0,112L40,64 80,76 112,43 144,52 192,20 232,30 280,2 280,4 232,37 192,28 152,60 112,51 80,88 40,76 0,120.138z" android:fillType="evenOdd" />
+</vector>

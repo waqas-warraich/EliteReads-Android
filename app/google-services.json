@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "760514835810",
+    "firebase_url": "https://elitereads-app-default-rtdb.firebaseio.com",
+    "project_id": "elitereads-app",
+    "storage_bucket": "elitereads-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760514835810:android:96a0af459d5cabf747a83b",
+        "android_client_info": {
+          "package_name": "com.elitereadings.elitereads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760514835810-fcc1src3b7a2vr1f2ivvqjhvk2h9diai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elitereadings.elitereads",
+            "certificate_hash": "90effb4d35e8bed6e49af7997703a09dd4563c7a"
+          }
+        },
+        {
+          "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPqMen5_Gh7hObmCVLVwOkde0HCpABf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760514835810:android:b75cad75260e8b3a47a83b",
+        "android_client_info": {
+          "package_name": "com.elitereads.elitereadsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760514835810-8lp523l8k2ibktkl62hfrf9a102ggef3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elitereads.elitereadsadmin",
+            "certificate_hash": "90effb4d35e8bed6e49af7997703a09dd4563c7a"
+          }
+        },
+        {
+          "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPqMen5_Gh7hObmCVLVwOkde0HCpABf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760514835810:android:9966557de860acd847a83b",
+        "android_client_info": {
+          "package_name": "com.recommendations.books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760514835810-mmvgpan3p5ou8nd63cdm8qiqs42cj1i1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recommendations.books",
+            "certificate_hash": "90effb4d35e8bed6e49af7997703a09dd4563c7a"
+          }
+        },
+        {
+          "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPqMen5_Gh7hObmCVLVwOkde0HCpABf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760514835810:android:4337e7de71fe6ad847a83b",
+        "android_client_info": {
+          "package_name": "com.titanreads.topreads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760514835810-p0v915tld5funr5bodsi6ng4gr5l5ed7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.titanreads.topreads",
+            "certificate_hash": "90effb4d35e8bed6e49af7997703a09dd4563c7a"
+          }
+        },
+        {
+          "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPqMen5_Gh7hObmCVLVwOkde0HCpABf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760514835810-oot7ljqsl80b0kod4sme0831h84ivfvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
